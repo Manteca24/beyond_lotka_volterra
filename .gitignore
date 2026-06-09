@@ -1,0 +1,56 @@
+# ─── Python ──────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# ─── Jupyter ─────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# ─── Entornos virtuales ───────────────────────────────────────────────
+.env
+.venv
+env/
+venv/
+ENV/
+tfg-env/
+
+# ─── macOS ───────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ─── IDEs ────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ─── Multimedia generada (pesada, se regenera con export_charts.py) ──
+# GIFs de simulación en predator_prey/ (se regeneran con el notebook)
+predator_prey/*.gif
+predator_prey/*.mp4
+predator_prey/*.avi
+
+# OJO: web/assets/simulacion_definitiva.gif SÍ se sube (necesario para la web)
+# Si quieres excluirlo explícitamente: añade una línea  !web/assets/*.gif
+
+# ─── Documentos privados / borradores ────────────────────────────────
+# El PDF de la memoria NO se sube al repo público
+predator_prey/*.pdf
+*.pdf
+
+# ─── Archivos generados que se pueden regenerar ──────────────────────
+# Los JSON de las gráficas se regeneran con export_charts.py
+# Comenta estas líneas si quieres incluirlos para que la web funcione
+# sin ejecutar el script (recomendado para GitHub Pages)
+# web/charts/*.json
+
+# ─── Otros ───────────────────────────────────────────────────────────
+backups/
+downloads/
+hf_space/
+web/
+visualize.py
