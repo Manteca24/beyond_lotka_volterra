@@ -2,147 +2,90 @@ Copyright © 2026 Agostina Zavia Martínez. All rights reserved.
 
 # Más allá de Lotka-Volterra: Impacto de la estocasticidad y la estructura del paisaje en la extinción de especies mediante Modelos Basados en Individuos
 
-Este repositorio contiene el código fuente y las simulaciones desarrolladas para el Trabajo de Fin de Grado (TFG) en Biología de la Universidad de Málaga. El proyecto contrasta las predicciones deterministas del modelo clásico de Lotka-Volterra con modelos estocásticos espacialmente explícitos, explorando el impacto de la fragmentación del hábitat y la viabilidad de los corredores ecológicos.
+Este repositorio contiene el código fuente, la documentación algorítmica y las simulaciones desarrolladas para el Trabajo de Fin de Grado (TFG) en Biología de la Universidad de Málaga. El proyecto contrasta las predicciones deterministas del modelo clásico de Lotka-Volterra con modelos estocásticos espacialmente explícitos (MBI), explorando el impacto de la fragmentación del hábitat, las trampas ecológicas y la viabilidad metapoblacional de los corredores ecológicos.
 
-🌐 **Web narrativa interactiva:** [agos.github.io/beyond_lotka_volterra](https://agos.github.io/beyond_lotka_volterra) *(enlace pendiente de activar)*
+🌐 **Web interactiva (GitHub Pages):** [manteca24.github.io/beyond_lotka_volterra](https://manteca24.github.io/beyond_lotka_volterra/)  
+☁️ **Simulador en la Nube (Hugging Face):** [manteca24/beyond-lotka-volterra](https://huggingface.co/spaces/manteca24/beyond-lotka-volterra)
 
 ---
 
 ## Estructura del Proyecto
 
-```
+El repositorio está organizado de la siguiente manera:
+
+```text
 TFG/
-├── predator_prey/
-│   ├── agent.py             ← Lógica de comportamiento de los agentes
-│   ├── model.py             ← Modelos ABM (entornos y topologías)
-│   ├── visualize.py         ← Dashboard interactivo (Solara + Altair)
-│   └── beyond_lotka_volterra.ipynb  ← Notebook principal del TFG
-(futura carpeta docs)
+├── agent.py                     ← Lógica de comportamiento de los agentes (presas y depredadores)
+├── model.py                     ← Topologías y dinámicas poblacionales del entorno (ABM)
+├── visualize.py                 ← Dashboard interactivo (Solara + Altair)
+├── beyond_lotka_volterra.ipynb  ← Notebook central del TFG (experimentos y análisis de datos)
+├── protocolo_ODD.md             ← Descripción estandarizada del modelo computacional
+├── bibliografia.md              ← Referencias bibliográficas empleadas en la investigación
+├── hf_space/                    ← Archivos de despliegue para Hugging Face (Dockerfile, requirements)
+└── docs/                        ← Web estática desplegada en GitHub Pages (HTML, CSS, JSONs)
 ```
 
-### `agent.py`
+### Protocolo ODD y Bibliografía
+- **`protocolo_ODD.md`**: Siguiendo el estándar internacional ODD (*Overview, Design concepts, Details*), este documento detalla la arquitectura orientada a objetos de la simulación, los parámetros de inicialización y el flujo de ejecución (Scheduling) para garantizar su reproducibilidad algorítmica.
+- **`bibliografia.md`**: Recopilación de todos los artículos, libros y fuentes de código utilizadas como base teórica y técnica del proyecto.
 
-Define el comportamiento a nivel micro de las entidades biológicas:
+### Módulos Principales (`agent.py` y `model.py`)
+Contienen las clases que definen el comportamiento microscópico (agentes con respuesta funcional tipo II de Holling, metabolismo y capacidad reproductiva) y el comportamiento macroscópico del paisaje (topologías en cuadrícula, límites reflectantes/toroidales, parches de refugio y corredores ecológicos).
 
-- **`SimplePrey` / `SimplePredator`**: Agentes base del modelo análogo a Lotka-Volterra estocástico (Fase IA). Movimiento aleatorio y reproducción/depredación por probabilidad fija.
-- **`ParadoxPrey` / `ParadoxPredator`**: Variantes con mayor tasa de crecimiento, usadas para demostrar la paradoja del enriquecimiento (Fase IB).
-- **`Prey` / `Predator`**: Agentes con dinámica metabólica completa: sistema de energía, capacidad de carga local y respuesta funcional de Holling tipo II (Fases IIA y IIB).
-- **`RefugePredator`**: Extensión de `Predator` que respeta los límites del hábitat refugio (sin acceso a celdas de reserva).
-- **`MountainPrey`**: Presa con preferencia estocástica (95%) por hábitat forestal protegido.
-- **`TerritorialPredator`**: Depredador apical con alto coste metabólico que domina en ecosistemas insulares.
-
-### `model.py`
-
-Contiene el marco macro-espacial y las reglas topológicas del ecosistema:
-
-- **`LotkaVolterraModel`**: Entorno base estocástico sobre plano toroidal (Fase IA).
-- **`LogisticHollingModel`**: Modelo con dinámica metabólica y respuesta funcional de Holling tipo II (Fase IB).
-- **`RefugeModel`**: Hábitat fragmentado con parches de refugio aleatorios — demuestra el efecto trampa ecológica (Fase IIA).
-- **`SanctuaryModel`**: Reserva contigua que genera dinámicas fuente-sumidero emergentes (Fase IIA).
-- **`FilterCorridorModel`**: Doble insularidad conectada por un corredor biológico — valida el efecto rescate en metapoblaciones (Fase IIB).
-
-### `visualize.py`
-
-Interfaz interactiva del simulador mediante componentes reactivos de **Solara** y **Altair/Vega-Lite**:
-
-- **`GridView()`**: Scatter plot que mapea dinámicamente el espacio 2D y la posición de los agentes.
-- **`PopulationChart()`**: Serie temporal interactiva de las poblaciones N(t).
-- **`Page()`**: Componente raíz que integra los controles, la grid y el gráfico.
-
-### `beyond_lotka_volterra.ipynb`
-
-Documento central del TFG. Integra la narrativa teórica, los experimentos por fases, los componentes Solara incrustados y el análisis estadístico con `batch_run`. Organizado en:
-
-- **Fase IA**: Modelo análogo a Lotka-Volterra — estocasticidad y extinción
-- **Fase IB**: Regulación logística y paradoja del enriquecimiento
-- **Fase IIA**: Fragmentación del hábitat y estructura espacial
-- **Fase IIB**: Metapoblaciones y corredores ecológicos
+### Interfaz Gráfica (`visualize.py`)
+Contiene los componentes reactivos construidos con **Solara** y **Altair** que generan los *dashboards* interactivos. Permiten la manipulación en tiempo real de los parámetros ecológicos ($\alpha$, $\delta$, $K$) y la visualización de los frentes de onda espaciales.
 
 ---
 
-## Tecnologías Utilizadas
+## Modos de Ejecución
 
-| Paquete | Versión | Uso |
-|---|---|---|
-| Python | 3.11+ | Lenguaje base |
-| [Mesa](https://mesa.readthedocs.io) | 3.0+ | Framework ABM |
-| [Solara](https://solara.dev) | 1.57+ | Dashboard interactivo reactivo |
-| [Altair](https://altair-viz.github.io) | 6.0+ | Visualización Vega-Lite |
-| Pandas | 2.0+ | Análisis y procesamiento de datos |
-| pyarrow | — | Backend eficiente para Altair + Solara |
-| vegafusion | — | Compatibilidad Altair-Solara |
-| Voilà | 0.5+ | Servidor de notebook como aplicación docs |
-| JupyterLab | 4.0+ | Entorno de desarrollo |
+El proyecto está diseñado para poder ejecutarse tanto en un entorno local (para desarrollo riguroso) como en producción (para su lectura y demostración pública).
 
----
+### 1. Ejecución en Producción (La Web y la Nube)
 
-## Instalación y Ejecución
+La forma más sencilla de experimentar el proyecto es a través de su despliegue público, que no requiere instalación alguna:
+- **[La Web Narrativa](https://manteca24.github.io/beyond_lotka_volterra/)**: La carpeta `docs/` contiene el código fuente de la página web narrativa del TFG. Está desplegada automáticamente mediante **GitHub Pages**.
+- **Simulador en la Nube**: Dentro de la web, hay varios paneles interactivos de experimentación incrustados mediante *Iframes*. El archivo `visualize.py` corre de forma permanente dentro de un contenedor Docker alojado en **Hugging Face Spaces**. La web se conecta directamente a este servidor para ofrecer la interactividad.
 
-### 1. Clonar el repositorio
+### 2. Ejecución Local (Desarrollo)
+
+Si deseas clonar el proyecto para analizar los datos en profundidad, correr el Notebook o alterar el código fuente en tu máquina:
 
 ```bash
 git clone https://github.com/Manteca24/beyond_lotka_volterra.git
 cd beyond_lotka_volterra
-```
 
-### 2. Crear el entorno virtual
-
-```bash
+# Crear y activar entorno virtual
 python3 -m venv tfg-env
 source tfg-env/bin/activate        # macOS / Linux
-# tfg-env\Scripts\activate         # Windows
+
+# Instalar dependencias
+pip install mesa solara altair pandas pyarrow jupyterlab
 ```
 
-### 3. Instalar dependencias
-
-```bash
-pip install mesa solara altair pandas pyarrow vegafusion jupyterlab voila
-```
-
-### 4. Ejecutar el notebook
-
+#### Analizar el Notebook de Jupyter
+El archivo `beyond_lotka_volterra.ipynb` contiene todo el análisis estadístico ejecutado en bloque (con la clase `batch_run` de Mesa).
 ```bash
 jupyter lab beyond_lotka_volterra.ipynb
 ```
 
-> **Nota:** Las celdas de Solara requieren ejecutar el notebook completo en orden. Si el kernel está limpio, ejecuta *Run All* antes de interactuar con los dashboards.
-
-### 5. Dashboard Solara standalone
-
+#### Correr el Servidor Solara en Local
+Si quieres levantar el simulador en tu propio ordenador (ideal si quieres probar cambios en el código visual de inmediato):
 ```bash
 solara run visualize.py
 ```
-
-### 6. Regenerar las gráficas de la docs
-
-```bash
-# Desde la raíz del proyecto (TFG/)
-python3 docs/export_charts.py
-```
+> **Nota de desarrollo web:** Si quieres probar la web localmente abriendo `docs/index.html` y que además se comunique con tu servidor local en vez del de Hugging Face, abre `docs/index.html`, busca el script en la etiqueta `<head>`, comenta la constante `SIM_ENV_URL` apuntada a la nube y descomenta la que apunta a `http://localhost:8765`.
 
 ---
 
 ## Fases de Simulación
 
-| Fase | Nombre | Modelo | Pregunta central |
+| Fase | Nombre | Modelo en código | Pregunta central |
 |---|---|---|---|
-| **IA** | Modelo clásico estocástico | `LotkaVolterraModel` | ¿La estocasticidad rompe el equilibrio de LV? |
-| **IB** | Regulación y paradoja del enriquecimiento | `LogisticHollingModel` | ¿Más recursos implica más estabilidad? |
-| **IIA** | Fragmentación del hábitat | `RefugeModel` / `SanctuaryModel` | ¿Importa la geometría del refugio? |
-| **IIB** | Corredores y metapoblaciones | `FilterCorridorModel` | ¿Puede el corredor revertir la extinción local? |
-
----
-
-## Web Narrativa
-
-La carpeta `docs/` contiene una página HTML autocontenida que narra los resultados del TFG con gráficas Altair interactivas y el GIF de la simulación. Diseñada para incluirse como enlace en la memoria.
-
-Para actualizarla tras modificar los modelos:
-
-```bash
-python3 docs/export_charts.py   # regenera los JSON de Vega-Lite
-# index.html se actualiza automáticamente
-```
+| **IA** | Lotka-Volterra Estocástico | `LotkaVolterraModel` | ¿La estocasticidad demográfica rompe el equilibrio de LV? |
+| **IB** | Capacidad de Carga y Saciedad | `LogisticHollingModel` | ¿Más recursos implica mayor resiliencia? (Paradoja del Enriquecimiento) |
+| **IIA** | Fragmentación del Hábitat | `RefugeModel` / `SanctuaryModel` | ¿Importa la distribución topológica del refugio espacial? |
+| **IIB** | Corredores Ecológicos | `FilterCorridorModel` | ¿Puede un corredor biológico rescatar subpoblaciones en extinción? |
 
 ---
 
