@@ -17,7 +17,7 @@ TFG/
 │   ├── model.py             ← Modelos ABM (entornos y topologías)
 │   ├── visualize.py         ← Dashboard interactivo (Solara + Altair)
 │   └── beyond_lotka_volterra.ipynb  ← Notebook principal del TFG
-(futura carpeta web)
+(futura carpeta docs)
 ```
 
 ### `agent.py`
@@ -71,7 +71,7 @@ Documento central del TFG. Integra la narrativa teórica, los experimentos por f
 | Pandas | 2.0+ | Análisis y procesamiento de datos |
 | pyarrow | — | Backend eficiente para Altair + Solara |
 | vegafusion | — | Compatibilidad Altair-Solara |
-| Voilà | 0.5+ | Servidor de notebook como aplicación web |
+| Voilà | 0.5+ | Servidor de notebook como aplicación docs |
 | JupyterLab | 4.0+ | Entorno de desarrollo |
 
 ---
@@ -113,11 +113,11 @@ jupyter lab beyond_lotka_volterra.ipynb
 solara run visualize.py
 ```
 
-### 6. Regenerar las gráficas de la web
+### 6. Regenerar las gráficas de la docs
 
 ```bash
 # Desde la raíz del proyecto (TFG/)
-python3 web/export_charts.py
+python3 docs/export_charts.py
 ```
 
 ---
@@ -135,12 +135,12 @@ python3 web/export_charts.py
 
 ## Web Narrativa
 
-La carpeta `web/` contiene una página HTML autocontenida que narra los resultados del TFG con gráficas Altair interactivas y el GIF de la simulación. Diseñada para incluirse como enlace en la memoria.
+La carpeta `docs/` contiene una página HTML autocontenida que narra los resultados del TFG con gráficas Altair interactivas y el GIF de la simulación. Diseñada para incluirse como enlace en la memoria.
 
 Para actualizarla tras modificar los modelos:
 
 ```bash
-python3 web/export_charts.py   # regenera los JSON de Vega-Lite
+python3 docs/export_charts.py   # regenera los JSON de Vega-Lite
 # index.html se actualiza automáticamente
 ```
 
