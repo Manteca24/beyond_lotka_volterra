@@ -1,0 +1,1555 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-6c8f179ef82b3a505d42b34153189b26"
+  },
+  "mark": {
+    "type": "line"
+  },
+  "encoding": {
+    "color": {
+      "field": "key",
+      "scale": {
+        "domain": [
+          "Prey",
+          "Predator"
+        ],
+        "range": [
+          "blue",
+          "red"
+        ]
+      },
+      "title": "Especie",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "index",
+      "title": "Pasos de Tiempo",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "value",
+      "title": "Poblaci\u00f3n",
+      "type": "quantitative"
+    }
+  },
+  "title": "Colapso en Refugio Fragmentado (Trampa Ecol\u00f3gica)",
+  "transform": [
+    {
+      "fold": [
+        "Prey",
+        "Predator"
+      ]
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "datasets": {
+    "data-6c8f179ef82b3a505d42b34153189b26": [
+      {
+        "index": 0,
+        "Prey": 48,
+        "Predator": 20
+      },
+      {
+        "index": 1,
+        "Prey": 47,
+        "Predator": 20
+      },
+      {
+        "index": 2,
+        "Prey": 49,
+        "Predator": 20
+      },
+      {
+        "index": 3,
+        "Prey": 54,
+        "Predator": 20
+      },
+      {
+        "index": 4,
+        "Prey": 58,
+        "Predator": 20
+      },
+      {
+        "index": 5,
+        "Prey": 58,
+        "Predator": 20
+      },
+      {
+        "index": 6,
+        "Prey": 59,
+        "Predator": 20
+      },
+      {
+        "index": 7,
+        "Prey": 63,
+        "Predator": 20
+      },
+      {
+        "index": 8,
+        "Prey": 68,
+        "Predator": 20
+      },
+      {
+        "index": 9,
+        "Prey": 71,
+        "Predator": 20
+      },
+      {
+        "index": 10,
+        "Prey": 74,
+        "Predator": 20
+      },
+      {
+        "index": 11,
+        "Prey": 74,
+        "Predator": 20
+      },
+      {
+        "index": 12,
+        "Prey": 77,
+        "Predator": 20
+      },
+      {
+        "index": 13,
+        "Prey": 82,
+        "Predator": 20
+      },
+      {
+        "index": 14,
+        "Prey": 84,
+        "Predator": 20
+      },
+      {
+        "index": 15,
+        "Prey": 90,
+        "Predator": 20
+      },
+      {
+        "index": 16,
+        "Prey": 92,
+        "Predator": 20
+      },
+      {
+        "index": 17,
+        "Prey": 96,
+        "Predator": 20
+      },
+      {
+        "index": 18,
+        "Prey": 96,
+        "Predator": 20
+      },
+      {
+        "index": 19,
+        "Prey": 100,
+        "Predator": 19
+      },
+      {
+        "index": 20,
+        "Prey": 103,
+        "Predator": 19
+      },
+      {
+        "index": 21,
+        "Prey": 103,
+        "Predator": 19
+      },
+      {
+        "index": 22,
+        "Prey": 103,
+        "Predator": 20
+      },
+      {
+        "index": 23,
+        "Prey": 110,
+        "Predator": 20
+      },
+      {
+        "index": 24,
+        "Prey": 115,
+        "Predator": 15
+      },
+      {
+        "index": 25,
+        "Prey": 136,
+        "Predator": 15
+      },
+      {
+        "index": 26,
+        "Prey": 143,
+        "Predator": 15
+      },
+      {
+        "index": 27,
+        "Prey": 150,
+        "Predator": 15
+      },
+      {
+        "index": 28,
+        "Prey": 155,
+        "Predator": 15
+      },
+      {
+        "index": 29,
+        "Prey": 170,
+        "Predator": 13
+      },
+      {
+        "index": 30,
+        "Prey": 183,
+        "Predator": 13
+      },
+      {
+        "index": 31,
+        "Prey": 198,
+        "Predator": 13
+      },
+      {
+        "index": 32,
+        "Prey": 210,
+        "Predator": 13
+      },
+      {
+        "index": 33,
+        "Prey": 218,
+        "Predator": 13
+      },
+      {
+        "index": 34,
+        "Prey": 227,
+        "Predator": 12
+      },
+      {
+        "index": 35,
+        "Prey": 243,
+        "Predator": 12
+      },
+      {
+        "index": 36,
+        "Prey": 251,
+        "Predator": 13
+      },
+      {
+        "index": 37,
+        "Prey": 273,
+        "Predator": 13
+      },
+      {
+        "index": 38,
+        "Prey": 299,
+        "Predator": 14
+      },
+      {
+        "index": 39,
+        "Prey": 315,
+        "Predator": 13
+      },
+      {
+        "index": 40,
+        "Prey": 338,
+        "Predator": 13
+      },
+      {
+        "index": 41,
+        "Prey": 353,
+        "Predator": 13
+      },
+      {
+        "index": 42,
+        "Prey": 378,
+        "Predator": 13
+      },
+      {
+        "index": 43,
+        "Prey": 395,
+        "Predator": 14
+      },
+      {
+        "index": 44,
+        "Prey": 426,
+        "Predator": 14
+      },
+      {
+        "index": 45,
+        "Prey": 450,
+        "Predator": 14
+      },
+      {
+        "index": 46,
+        "Prey": 474,
+        "Predator": 14
+      },
+      {
+        "index": 47,
+        "Prey": 512,
+        "Predator": 14
+      },
+      {
+        "index": 48,
+        "Prey": 547,
+        "Predator": 15
+      },
+      {
+        "index": 49,
+        "Prey": 565,
+        "Predator": 15
+      },
+      {
+        "index": 50,
+        "Prey": 596,
+        "Predator": 16
+      },
+      {
+        "index": 51,
+        "Prey": 627,
+        "Predator": 18
+      },
+      {
+        "index": 52,
+        "Prey": 661,
+        "Predator": 18
+      },
+      {
+        "index": 53,
+        "Prey": 696,
+        "Predator": 19
+      },
+      {
+        "index": 54,
+        "Prey": 733,
+        "Predator": 23
+      },
+      {
+        "index": 55,
+        "Prey": 765,
+        "Predator": 24
+      },
+      {
+        "index": 56,
+        "Prey": 804,
+        "Predator": 26
+      },
+      {
+        "index": 57,
+        "Prey": 845,
+        "Predator": 26
+      },
+      {
+        "index": 58,
+        "Prey": 875,
+        "Predator": 27
+      },
+      {
+        "index": 59,
+        "Prey": 896,
+        "Predator": 28
+      },
+      {
+        "index": 60,
+        "Prey": 919,
+        "Predator": 33
+      },
+      {
+        "index": 61,
+        "Prey": 934,
+        "Predator": 38
+      },
+      {
+        "index": 62,
+        "Prey": 942,
+        "Predator": 41
+      },
+      {
+        "index": 63,
+        "Prey": 953,
+        "Predator": 43
+      },
+      {
+        "index": 64,
+        "Prey": 958,
+        "Predator": 49
+      },
+      {
+        "index": 65,
+        "Prey": 982,
+        "Predator": 50
+      },
+      {
+        "index": 66,
+        "Prey": 976,
+        "Predator": 55
+      },
+      {
+        "index": 67,
+        "Prey": 976,
+        "Predator": 59
+      },
+      {
+        "index": 68,
+        "Prey": 967,
+        "Predator": 65
+      },
+      {
+        "index": 69,
+        "Prey": 963,
+        "Predator": 64
+      },
+      {
+        "index": 70,
+        "Prey": 954,
+        "Predator": 67
+      },
+      {
+        "index": 71,
+        "Prey": 943,
+        "Predator": 75
+      },
+      {
+        "index": 72,
+        "Prey": 927,
+        "Predator": 86
+      },
+      {
+        "index": 73,
+        "Prey": 906,
+        "Predator": 86
+      },
+      {
+        "index": 74,
+        "Prey": 879,
+        "Predator": 93
+      },
+      {
+        "index": 75,
+        "Prey": 863,
+        "Predator": 99
+      },
+      {
+        "index": 76,
+        "Prey": 824,
+        "Predator": 107
+      },
+      {
+        "index": 77,
+        "Prey": 802,
+        "Predator": 110
+      },
+      {
+        "index": 78,
+        "Prey": 775,
+        "Predator": 119
+      },
+      {
+        "index": 79,
+        "Prey": 723,
+        "Predator": 132
+      },
+      {
+        "index": 80,
+        "Prey": 680,
+        "Predator": 137
+      },
+      {
+        "index": 81,
+        "Prey": 635,
+        "Predator": 142
+      },
+      {
+        "index": 82,
+        "Prey": 571,
+        "Predator": 153
+      },
+      {
+        "index": 83,
+        "Prey": 525,
+        "Predator": 160
+      },
+      {
+        "index": 84,
+        "Prey": 467,
+        "Predator": 174
+      },
+      {
+        "index": 85,
+        "Prey": 410,
+        "Predator": 182
+      },
+      {
+        "index": 86,
+        "Prey": 339,
+        "Predator": 183
+      },
+      {
+        "index": 87,
+        "Prey": 275,
+        "Predator": 187
+      },
+      {
+        "index": 88,
+        "Prey": 224,
+        "Predator": 193
+      },
+      {
+        "index": 89,
+        "Prey": 174,
+        "Predator": 194
+      },
+      {
+        "index": 90,
+        "Prey": 143,
+        "Predator": 192
+      },
+      {
+        "index": 91,
+        "Prey": 119,
+        "Predator": 196
+      },
+      {
+        "index": 92,
+        "Prey": 96,
+        "Predator": 197
+      },
+      {
+        "index": 93,
+        "Prey": 69,
+        "Predator": 197
+      },
+      {
+        "index": 94,
+        "Prey": 55,
+        "Predator": 198
+      },
+      {
+        "index": 95,
+        "Prey": 42,
+        "Predator": 197
+      },
+      {
+        "index": 96,
+        "Prey": 31,
+        "Predator": 196
+      },
+      {
+        "index": 97,
+        "Prey": 25,
+        "Predator": 191
+      },
+      {
+        "index": 98,
+        "Prey": 19,
+        "Predator": 190
+      },
+      {
+        "index": 99,
+        "Prey": 17,
+        "Predator": 187
+      },
+      {
+        "index": 100,
+        "Prey": 10,
+        "Predator": 184
+      },
+      {
+        "index": 101,
+        "Prey": 8,
+        "Predator": 182
+      },
+      {
+        "index": 102,
+        "Prey": 6,
+        "Predator": 174
+      },
+      {
+        "index": 103,
+        "Prey": 5,
+        "Predator": 171
+      },
+      {
+        "index": 104,
+        "Prey": 5,
+        "Predator": 165
+      },
+      {
+        "index": 105,
+        "Prey": 2,
+        "Predator": 158
+      },
+      {
+        "index": 106,
+        "Prey": 1,
+        "Predator": 152
+      },
+      {
+        "index": 107,
+        "Prey": 1,
+        "Predator": 141
+      },
+      {
+        "index": 108,
+        "Prey": 0,
+        "Predator": 133
+      },
+      {
+        "index": 109,
+        "Prey": 0,
+        "Predator": 125
+      },
+      {
+        "index": 110,
+        "Prey": 0,
+        "Predator": 117
+      },
+      {
+        "index": 111,
+        "Prey": 0,
+        "Predator": 107
+      },
+      {
+        "index": 112,
+        "Prey": 0,
+        "Predator": 95
+      },
+      {
+        "index": 113,
+        "Prey": 0,
+        "Predator": 84
+      },
+      {
+        "index": 114,
+        "Prey": 0,
+        "Predator": 66
+      },
+      {
+        "index": 115,
+        "Prey": 0,
+        "Predator": 56
+      },
+      {
+        "index": 116,
+        "Prey": 0,
+        "Predator": 47
+      },
+      {
+        "index": 117,
+        "Prey": 0,
+        "Predator": 44
+      },
+      {
+        "index": 118,
+        "Prey": 0,
+        "Predator": 37
+      },
+      {
+        "index": 119,
+        "Prey": 0,
+        "Predator": 25
+      },
+      {
+        "index": 120,
+        "Prey": 0,
+        "Predator": 21
+      },
+      {
+        "index": 121,
+        "Prey": 0,
+        "Predator": 14
+      },
+      {
+        "index": 122,
+        "Prey": 0,
+        "Predator": 11
+      },
+      {
+        "index": 123,
+        "Prey": 0,
+        "Predator": 8
+      },
+      {
+        "index": 124,
+        "Prey": 0,
+        "Predator": 3
+      },
+      {
+        "index": 125,
+        "Prey": 0,
+        "Predator": 3
+      },
+      {
+        "index": 126,
+        "Prey": 0,
+        "Predator": 1
+      },
+      {
+        "index": 127,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 128,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 129,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 130,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 131,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 132,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 133,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 134,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 135,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 136,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 137,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 138,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 139,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 140,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 141,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 142,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 143,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 144,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 145,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 146,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 147,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 148,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 149,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 150,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 151,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 152,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 153,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 154,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 155,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 156,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 157,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 158,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 159,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 160,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 161,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 162,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 163,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 164,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 165,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 166,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 167,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 168,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 169,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 170,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 171,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 172,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 173,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 174,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 175,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 176,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 177,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 178,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 179,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 180,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 181,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 182,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 183,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 184,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 185,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 186,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 187,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 188,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 189,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 190,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 191,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 192,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 193,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 194,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 195,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 196,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 197,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 198,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 199,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 200,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 201,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 202,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 203,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 204,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 205,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 206,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 207,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 208,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 209,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 210,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 211,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 212,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 213,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 214,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 215,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 216,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 217,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 218,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 219,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 220,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 221,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 222,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 223,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 224,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 225,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 226,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 227,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 228,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 229,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 230,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 231,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 232,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 233,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 234,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 235,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 236,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 237,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 238,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 239,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 240,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 241,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 242,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 243,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 244,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 245,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 246,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 247,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 248,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 249,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 250,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 251,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 252,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 253,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 254,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 255,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 256,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 257,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 258,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 259,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 260,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 261,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 262,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 263,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 264,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 265,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 266,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 267,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 268,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 269,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 270,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 271,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 272,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 273,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 274,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 275,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 276,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 277,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 278,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 279,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 280,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 281,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 282,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 283,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 284,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 285,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 286,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 287,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 288,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 289,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 290,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 291,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 292,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 293,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 294,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 295,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 296,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 297,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 298,
+        "Prey": 0,
+        "Predator": 0
+      },
+      {
+        "index": 299,
+        "Prey": 0,
+        "Predator": 0
+      }
+    ]
+  }
+}

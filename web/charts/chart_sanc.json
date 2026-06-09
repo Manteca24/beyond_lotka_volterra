@@ -1,0 +1,2055 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-241ac7b6e7724c25d3c68ad8dab976a8"
+  },
+  "mark": {
+    "type": "line"
+  },
+  "encoding": {
+    "color": {
+      "field": "key",
+      "scale": {
+        "domain": [
+          "Prey",
+          "Predator"
+        ],
+        "range": [
+          "blue",
+          "red"
+        ]
+      },
+      "title": "Especie",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "index",
+      "title": "Pasos de Tiempo",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "value",
+      "title": "Poblaci\u00f3n",
+      "type": "quantitative"
+    }
+  },
+  "title": "Estabilidad Fuente-Sumidero (Santuario Contiguo)",
+  "transform": [
+    {
+      "fold": [
+        "Prey",
+        "Predator"
+      ]
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "datasets": {
+    "data-241ac7b6e7724c25d3c68ad8dab976a8": [
+      {
+        "index": 0,
+        "Prey": 105,
+        "Predator": 30
+      },
+      {
+        "index": 1,
+        "Prey": 112,
+        "Predator": 30
+      },
+      {
+        "index": 2,
+        "Prey": 121,
+        "Predator": 30
+      },
+      {
+        "index": 3,
+        "Prey": 130,
+        "Predator": 30
+      },
+      {
+        "index": 4,
+        "Prey": 135,
+        "Predator": 30
+      },
+      {
+        "index": 5,
+        "Prey": 144,
+        "Predator": 30
+      },
+      {
+        "index": 6,
+        "Prey": 155,
+        "Predator": 30
+      },
+      {
+        "index": 7,
+        "Prey": 165,
+        "Predator": 30
+      },
+      {
+        "index": 8,
+        "Prey": 174,
+        "Predator": 30
+      },
+      {
+        "index": 9,
+        "Prey": 188,
+        "Predator": 30
+      },
+      {
+        "index": 10,
+        "Prey": 204,
+        "Predator": 30
+      },
+      {
+        "index": 11,
+        "Prey": 221,
+        "Predator": 30
+      },
+      {
+        "index": 12,
+        "Prey": 242,
+        "Predator": 30
+      },
+      {
+        "index": 13,
+        "Prey": 269,
+        "Predator": 30
+      },
+      {
+        "index": 14,
+        "Prey": 286,
+        "Predator": 30
+      },
+      {
+        "index": 15,
+        "Prey": 301,
+        "Predator": 30
+      },
+      {
+        "index": 16,
+        "Prey": 316,
+        "Predator": 30
+      },
+      {
+        "index": 17,
+        "Prey": 336,
+        "Predator": 30
+      },
+      {
+        "index": 18,
+        "Prey": 352,
+        "Predator": 30
+      },
+      {
+        "index": 19,
+        "Prey": 375,
+        "Predator": 27
+      },
+      {
+        "index": 20,
+        "Prey": 399,
+        "Predator": 29
+      },
+      {
+        "index": 21,
+        "Prey": 435,
+        "Predator": 29
+      },
+      {
+        "index": 22,
+        "Prey": 469,
+        "Predator": 29
+      },
+      {
+        "index": 23,
+        "Prey": 498,
+        "Predator": 28
+      },
+      {
+        "index": 24,
+        "Prey": 529,
+        "Predator": 24
+      },
+      {
+        "index": 25,
+        "Prey": 572,
+        "Predator": 24
+      },
+      {
+        "index": 26,
+        "Prey": 609,
+        "Predator": 24
+      },
+      {
+        "index": 27,
+        "Prey": 651,
+        "Predator": 25
+      },
+      {
+        "index": 28,
+        "Prey": 710,
+        "Predator": 25
+      },
+      {
+        "index": 29,
+        "Prey": 762,
+        "Predator": 24
+      },
+      {
+        "index": 30,
+        "Prey": 812,
+        "Predator": 24
+      },
+      {
+        "index": 31,
+        "Prey": 864,
+        "Predator": 25
+      },
+      {
+        "index": 32,
+        "Prey": 923,
+        "Predator": 26
+      },
+      {
+        "index": 33,
+        "Prey": 983,
+        "Predator": 27
+      },
+      {
+        "index": 34,
+        "Prey": 1053,
+        "Predator": 27
+      },
+      {
+        "index": 35,
+        "Prey": 1121,
+        "Predator": 28
+      },
+      {
+        "index": 36,
+        "Prey": 1178,
+        "Predator": 30
+      },
+      {
+        "index": 37,
+        "Prey": 1231,
+        "Predator": 30
+      },
+      {
+        "index": 38,
+        "Prey": 1285,
+        "Predator": 32
+      },
+      {
+        "index": 39,
+        "Prey": 1347,
+        "Predator": 34
+      },
+      {
+        "index": 40,
+        "Prey": 1421,
+        "Predator": 35
+      },
+      {
+        "index": 41,
+        "Prey": 1477,
+        "Predator": 36
+      },
+      {
+        "index": 42,
+        "Prey": 1546,
+        "Predator": 37
+      },
+      {
+        "index": 43,
+        "Prey": 1618,
+        "Predator": 40
+      },
+      {
+        "index": 44,
+        "Prey": 1679,
+        "Predator": 43
+      },
+      {
+        "index": 45,
+        "Prey": 1754,
+        "Predator": 47
+      },
+      {
+        "index": 46,
+        "Prey": 1827,
+        "Predator": 48
+      },
+      {
+        "index": 47,
+        "Prey": 1901,
+        "Predator": 51
+      },
+      {
+        "index": 48,
+        "Prey": 1966,
+        "Predator": 59
+      },
+      {
+        "index": 49,
+        "Prey": 2023,
+        "Predator": 62
+      },
+      {
+        "index": 50,
+        "Prey": 2073,
+        "Predator": 65
+      },
+      {
+        "index": 51,
+        "Prey": 2130,
+        "Predator": 69
+      },
+      {
+        "index": 52,
+        "Prey": 2204,
+        "Predator": 78
+      },
+      {
+        "index": 53,
+        "Prey": 2254,
+        "Predator": 80
+      },
+      {
+        "index": 54,
+        "Prey": 2302,
+        "Predator": 81
+      },
+      {
+        "index": 55,
+        "Prey": 2348,
+        "Predator": 91
+      },
+      {
+        "index": 56,
+        "Prey": 2385,
+        "Predator": 104
+      },
+      {
+        "index": 57,
+        "Prey": 2413,
+        "Predator": 112
+      },
+      {
+        "index": 58,
+        "Prey": 2423,
+        "Predator": 118
+      },
+      {
+        "index": 59,
+        "Prey": 2421,
+        "Predator": 127
+      },
+      {
+        "index": 60,
+        "Prey": 2438,
+        "Predator": 139
+      },
+      {
+        "index": 61,
+        "Prey": 2412,
+        "Predator": 146
+      },
+      {
+        "index": 62,
+        "Prey": 2405,
+        "Predator": 155
+      },
+      {
+        "index": 63,
+        "Prey": 2388,
+        "Predator": 165
+      },
+      {
+        "index": 64,
+        "Prey": 2355,
+        "Predator": 169
+      },
+      {
+        "index": 65,
+        "Prey": 2311,
+        "Predator": 176
+      },
+      {
+        "index": 66,
+        "Prey": 2281,
+        "Predator": 188
+      },
+      {
+        "index": 67,
+        "Prey": 2219,
+        "Predator": 202
+      },
+      {
+        "index": 68,
+        "Prey": 2175,
+        "Predator": 212
+      },
+      {
+        "index": 69,
+        "Prey": 2117,
+        "Predator": 217
+      },
+      {
+        "index": 70,
+        "Prey": 2064,
+        "Predator": 232
+      },
+      {
+        "index": 71,
+        "Prey": 1994,
+        "Predator": 241
+      },
+      {
+        "index": 72,
+        "Prey": 1932,
+        "Predator": 249
+      },
+      {
+        "index": 73,
+        "Prey": 1876,
+        "Predator": 261
+      },
+      {
+        "index": 74,
+        "Prey": 1805,
+        "Predator": 275
+      },
+      {
+        "index": 75,
+        "Prey": 1727,
+        "Predator": 284
+      },
+      {
+        "index": 76,
+        "Prey": 1668,
+        "Predator": 293
+      },
+      {
+        "index": 77,
+        "Prey": 1613,
+        "Predator": 301
+      },
+      {
+        "index": 78,
+        "Prey": 1557,
+        "Predator": 300
+      },
+      {
+        "index": 79,
+        "Prey": 1502,
+        "Predator": 307
+      },
+      {
+        "index": 80,
+        "Prey": 1455,
+        "Predator": 311
+      },
+      {
+        "index": 81,
+        "Prey": 1416,
+        "Predator": 305
+      },
+      {
+        "index": 82,
+        "Prey": 1377,
+        "Predator": 310
+      },
+      {
+        "index": 83,
+        "Prey": 1332,
+        "Predator": 314
+      },
+      {
+        "index": 84,
+        "Prey": 1294,
+        "Predator": 316
+      },
+      {
+        "index": 85,
+        "Prey": 1269,
+        "Predator": 313
+      },
+      {
+        "index": 86,
+        "Prey": 1247,
+        "Predator": 316
+      },
+      {
+        "index": 87,
+        "Prey": 1230,
+        "Predator": 315
+      },
+      {
+        "index": 88,
+        "Prey": 1200,
+        "Predator": 312
+      },
+      {
+        "index": 89,
+        "Prey": 1170,
+        "Predator": 313
+      },
+      {
+        "index": 90,
+        "Prey": 1151,
+        "Predator": 308
+      },
+      {
+        "index": 91,
+        "Prey": 1141,
+        "Predator": 306
+      },
+      {
+        "index": 92,
+        "Prey": 1124,
+        "Predator": 305
+      },
+      {
+        "index": 93,
+        "Prey": 1108,
+        "Predator": 302
+      },
+      {
+        "index": 94,
+        "Prey": 1110,
+        "Predator": 300
+      },
+      {
+        "index": 95,
+        "Prey": 1102,
+        "Predator": 296
+      },
+      {
+        "index": 96,
+        "Prey": 1094,
+        "Predator": 289
+      },
+      {
+        "index": 97,
+        "Prey": 1092,
+        "Predator": 285
+      },
+      {
+        "index": 98,
+        "Prey": 1082,
+        "Predator": 280
+      },
+      {
+        "index": 99,
+        "Prey": 1075,
+        "Predator": 276
+      },
+      {
+        "index": 100,
+        "Prey": 1078,
+        "Predator": 266
+      },
+      {
+        "index": 101,
+        "Prey": 1074,
+        "Predator": 251
+      },
+      {
+        "index": 102,
+        "Prey": 1078,
+        "Predator": 239
+      },
+      {
+        "index": 103,
+        "Prey": 1076,
+        "Predator": 224
+      },
+      {
+        "index": 104,
+        "Prey": 1070,
+        "Predator": 214
+      },
+      {
+        "index": 105,
+        "Prey": 1060,
+        "Predator": 203
+      },
+      {
+        "index": 106,
+        "Prey": 1060,
+        "Predator": 193
+      },
+      {
+        "index": 107,
+        "Prey": 1058,
+        "Predator": 186
+      },
+      {
+        "index": 108,
+        "Prey": 1068,
+        "Predator": 176
+      },
+      {
+        "index": 109,
+        "Prey": 1074,
+        "Predator": 167
+      },
+      {
+        "index": 110,
+        "Prey": 1084,
+        "Predator": 163
+      },
+      {
+        "index": 111,
+        "Prey": 1089,
+        "Predator": 159
+      },
+      {
+        "index": 112,
+        "Prey": 1098,
+        "Predator": 156
+      },
+      {
+        "index": 113,
+        "Prey": 1100,
+        "Predator": 155
+      },
+      {
+        "index": 114,
+        "Prey": 1114,
+        "Predator": 155
+      },
+      {
+        "index": 115,
+        "Prey": 1124,
+        "Predator": 152
+      },
+      {
+        "index": 116,
+        "Prey": 1134,
+        "Predator": 150
+      },
+      {
+        "index": 117,
+        "Prey": 1134,
+        "Predator": 146
+      },
+      {
+        "index": 118,
+        "Prey": 1134,
+        "Predator": 141
+      },
+      {
+        "index": 119,
+        "Prey": 1131,
+        "Predator": 140
+      },
+      {
+        "index": 120,
+        "Prey": 1132,
+        "Predator": 140
+      },
+      {
+        "index": 121,
+        "Prey": 1141,
+        "Predator": 139
+      },
+      {
+        "index": 122,
+        "Prey": 1148,
+        "Predator": 134
+      },
+      {
+        "index": 123,
+        "Prey": 1151,
+        "Predator": 133
+      },
+      {
+        "index": 124,
+        "Prey": 1155,
+        "Predator": 133
+      },
+      {
+        "index": 125,
+        "Prey": 1165,
+        "Predator": 133
+      },
+      {
+        "index": 126,
+        "Prey": 1169,
+        "Predator": 134
+      },
+      {
+        "index": 127,
+        "Prey": 1168,
+        "Predator": 133
+      },
+      {
+        "index": 128,
+        "Prey": 1172,
+        "Predator": 131
+      },
+      {
+        "index": 129,
+        "Prey": 1171,
+        "Predator": 137
+      },
+      {
+        "index": 130,
+        "Prey": 1178,
+        "Predator": 130
+      },
+      {
+        "index": 131,
+        "Prey": 1187,
+        "Predator": 129
+      },
+      {
+        "index": 132,
+        "Prey": 1189,
+        "Predator": 130
+      },
+      {
+        "index": 133,
+        "Prey": 1195,
+        "Predator": 135
+      },
+      {
+        "index": 134,
+        "Prey": 1201,
+        "Predator": 132
+      },
+      {
+        "index": 135,
+        "Prey": 1196,
+        "Predator": 133
+      },
+      {
+        "index": 136,
+        "Prey": 1197,
+        "Predator": 134
+      },
+      {
+        "index": 137,
+        "Prey": 1200,
+        "Predator": 135
+      },
+      {
+        "index": 138,
+        "Prey": 1195,
+        "Predator": 140
+      },
+      {
+        "index": 139,
+        "Prey": 1204,
+        "Predator": 138
+      },
+      {
+        "index": 140,
+        "Prey": 1204,
+        "Predator": 139
+      },
+      {
+        "index": 141,
+        "Prey": 1198,
+        "Predator": 137
+      },
+      {
+        "index": 142,
+        "Prey": 1204,
+        "Predator": 130
+      },
+      {
+        "index": 143,
+        "Prey": 1204,
+        "Predator": 128
+      },
+      {
+        "index": 144,
+        "Prey": 1209,
+        "Predator": 126
+      },
+      {
+        "index": 145,
+        "Prey": 1220,
+        "Predator": 125
+      },
+      {
+        "index": 146,
+        "Prey": 1219,
+        "Predator": 125
+      },
+      {
+        "index": 147,
+        "Prey": 1235,
+        "Predator": 127
+      },
+      {
+        "index": 148,
+        "Prey": 1246,
+        "Predator": 126
+      },
+      {
+        "index": 149,
+        "Prey": 1242,
+        "Predator": 123
+      },
+      {
+        "index": 150,
+        "Prey": 1226,
+        "Predator": 128
+      },
+      {
+        "index": 151,
+        "Prey": 1225,
+        "Predator": 127
+      },
+      {
+        "index": 152,
+        "Prey": 1221,
+        "Predator": 126
+      },
+      {
+        "index": 153,
+        "Prey": 1223,
+        "Predator": 125
+      },
+      {
+        "index": 154,
+        "Prey": 1233,
+        "Predator": 129
+      },
+      {
+        "index": 155,
+        "Prey": 1222,
+        "Predator": 132
+      },
+      {
+        "index": 156,
+        "Prey": 1222,
+        "Predator": 132
+      },
+      {
+        "index": 157,
+        "Prey": 1223,
+        "Predator": 135
+      },
+      {
+        "index": 158,
+        "Prey": 1210,
+        "Predator": 138
+      },
+      {
+        "index": 159,
+        "Prey": 1224,
+        "Predator": 136
+      },
+      {
+        "index": 160,
+        "Prey": 1204,
+        "Predator": 141
+      },
+      {
+        "index": 161,
+        "Prey": 1186,
+        "Predator": 140
+      },
+      {
+        "index": 162,
+        "Prey": 1194,
+        "Predator": 139
+      },
+      {
+        "index": 163,
+        "Prey": 1199,
+        "Predator": 141
+      },
+      {
+        "index": 164,
+        "Prey": 1189,
+        "Predator": 144
+      },
+      {
+        "index": 165,
+        "Prey": 1175,
+        "Predator": 140
+      },
+      {
+        "index": 166,
+        "Prey": 1170,
+        "Predator": 140
+      },
+      {
+        "index": 167,
+        "Prey": 1157,
+        "Predator": 142
+      },
+      {
+        "index": 168,
+        "Prey": 1159,
+        "Predator": 146
+      },
+      {
+        "index": 169,
+        "Prey": 1154,
+        "Predator": 142
+      },
+      {
+        "index": 170,
+        "Prey": 1130,
+        "Predator": 146
+      },
+      {
+        "index": 171,
+        "Prey": 1126,
+        "Predator": 145
+      },
+      {
+        "index": 172,
+        "Prey": 1124,
+        "Predator": 151
+      },
+      {
+        "index": 173,
+        "Prey": 1127,
+        "Predator": 148
+      },
+      {
+        "index": 174,
+        "Prey": 1128,
+        "Predator": 150
+      },
+      {
+        "index": 175,
+        "Prey": 1129,
+        "Predator": 149
+      },
+      {
+        "index": 176,
+        "Prey": 1135,
+        "Predator": 147
+      },
+      {
+        "index": 177,
+        "Prey": 1132,
+        "Predator": 146
+      },
+      {
+        "index": 178,
+        "Prey": 1134,
+        "Predator": 149
+      },
+      {
+        "index": 179,
+        "Prey": 1137,
+        "Predator": 151
+      },
+      {
+        "index": 180,
+        "Prey": 1144,
+        "Predator": 149
+      },
+      {
+        "index": 181,
+        "Prey": 1148,
+        "Predator": 152
+      },
+      {
+        "index": 182,
+        "Prey": 1162,
+        "Predator": 153
+      },
+      {
+        "index": 183,
+        "Prey": 1166,
+        "Predator": 152
+      },
+      {
+        "index": 184,
+        "Prey": 1168,
+        "Predator": 150
+      },
+      {
+        "index": 185,
+        "Prey": 1169,
+        "Predator": 147
+      },
+      {
+        "index": 186,
+        "Prey": 1176,
+        "Predator": 144
+      },
+      {
+        "index": 187,
+        "Prey": 1177,
+        "Predator": 146
+      },
+      {
+        "index": 188,
+        "Prey": 1190,
+        "Predator": 144
+      },
+      {
+        "index": 189,
+        "Prey": 1190,
+        "Predator": 142
+      },
+      {
+        "index": 190,
+        "Prey": 1195,
+        "Predator": 145
+      },
+      {
+        "index": 191,
+        "Prey": 1204,
+        "Predator": 147
+      },
+      {
+        "index": 192,
+        "Prey": 1225,
+        "Predator": 145
+      },
+      {
+        "index": 193,
+        "Prey": 1229,
+        "Predator": 145
+      },
+      {
+        "index": 194,
+        "Prey": 1225,
+        "Predator": 144
+      },
+      {
+        "index": 195,
+        "Prey": 1232,
+        "Predator": 138
+      },
+      {
+        "index": 196,
+        "Prey": 1237,
+        "Predator": 138
+      },
+      {
+        "index": 197,
+        "Prey": 1235,
+        "Predator": 136
+      },
+      {
+        "index": 198,
+        "Prey": 1243,
+        "Predator": 131
+      },
+      {
+        "index": 199,
+        "Prey": 1253,
+        "Predator": 131
+      },
+      {
+        "index": 200,
+        "Prey": 1253,
+        "Predator": 129
+      },
+      {
+        "index": 201,
+        "Prey": 1238,
+        "Predator": 128
+      },
+      {
+        "index": 202,
+        "Prey": 1245,
+        "Predator": 126
+      },
+      {
+        "index": 203,
+        "Prey": 1253,
+        "Predator": 126
+      },
+      {
+        "index": 204,
+        "Prey": 1263,
+        "Predator": 127
+      },
+      {
+        "index": 205,
+        "Prey": 1276,
+        "Predator": 125
+      },
+      {
+        "index": 206,
+        "Prey": 1283,
+        "Predator": 125
+      },
+      {
+        "index": 207,
+        "Prey": 1286,
+        "Predator": 126
+      },
+      {
+        "index": 208,
+        "Prey": 1302,
+        "Predator": 122
+      },
+      {
+        "index": 209,
+        "Prey": 1315,
+        "Predator": 122
+      },
+      {
+        "index": 210,
+        "Prey": 1316,
+        "Predator": 123
+      },
+      {
+        "index": 211,
+        "Prey": 1312,
+        "Predator": 128
+      },
+      {
+        "index": 212,
+        "Prey": 1309,
+        "Predator": 129
+      },
+      {
+        "index": 213,
+        "Prey": 1306,
+        "Predator": 130
+      },
+      {
+        "index": 214,
+        "Prey": 1302,
+        "Predator": 130
+      },
+      {
+        "index": 215,
+        "Prey": 1293,
+        "Predator": 133
+      },
+      {
+        "index": 216,
+        "Prey": 1290,
+        "Predator": 136
+      },
+      {
+        "index": 217,
+        "Prey": 1297,
+        "Predator": 137
+      },
+      {
+        "index": 218,
+        "Prey": 1304,
+        "Predator": 136
+      },
+      {
+        "index": 219,
+        "Prey": 1304,
+        "Predator": 139
+      },
+      {
+        "index": 220,
+        "Prey": 1304,
+        "Predator": 140
+      },
+      {
+        "index": 221,
+        "Prey": 1300,
+        "Predator": 141
+      },
+      {
+        "index": 222,
+        "Prey": 1285,
+        "Predator": 144
+      },
+      {
+        "index": 223,
+        "Prey": 1287,
+        "Predator": 146
+      },
+      {
+        "index": 224,
+        "Prey": 1284,
+        "Predator": 149
+      },
+      {
+        "index": 225,
+        "Prey": 1290,
+        "Predator": 146
+      },
+      {
+        "index": 226,
+        "Prey": 1294,
+        "Predator": 141
+      },
+      {
+        "index": 227,
+        "Prey": 1290,
+        "Predator": 142
+      },
+      {
+        "index": 228,
+        "Prey": 1280,
+        "Predator": 145
+      },
+      {
+        "index": 229,
+        "Prey": 1284,
+        "Predator": 142
+      },
+      {
+        "index": 230,
+        "Prey": 1277,
+        "Predator": 143
+      },
+      {
+        "index": 231,
+        "Prey": 1273,
+        "Predator": 142
+      },
+      {
+        "index": 232,
+        "Prey": 1287,
+        "Predator": 142
+      },
+      {
+        "index": 233,
+        "Prey": 1288,
+        "Predator": 145
+      },
+      {
+        "index": 234,
+        "Prey": 1305,
+        "Predator": 151
+      },
+      {
+        "index": 235,
+        "Prey": 1312,
+        "Predator": 153
+      },
+      {
+        "index": 236,
+        "Prey": 1305,
+        "Predator": 151
+      },
+      {
+        "index": 237,
+        "Prey": 1301,
+        "Predator": 151
+      },
+      {
+        "index": 238,
+        "Prey": 1306,
+        "Predator": 147
+      },
+      {
+        "index": 239,
+        "Prey": 1298,
+        "Predator": 145
+      },
+      {
+        "index": 240,
+        "Prey": 1297,
+        "Predator": 145
+      },
+      {
+        "index": 241,
+        "Prey": 1296,
+        "Predator": 147
+      },
+      {
+        "index": 242,
+        "Prey": 1294,
+        "Predator": 150
+      },
+      {
+        "index": 243,
+        "Prey": 1289,
+        "Predator": 156
+      },
+      {
+        "index": 244,
+        "Prey": 1282,
+        "Predator": 161
+      },
+      {
+        "index": 245,
+        "Prey": 1270,
+        "Predator": 163
+      },
+      {
+        "index": 246,
+        "Prey": 1268,
+        "Predator": 169
+      },
+      {
+        "index": 247,
+        "Prey": 1268,
+        "Predator": 169
+      },
+      {
+        "index": 248,
+        "Prey": 1266,
+        "Predator": 175
+      },
+      {
+        "index": 249,
+        "Prey": 1262,
+        "Predator": 172
+      },
+      {
+        "index": 250,
+        "Prey": 1263,
+        "Predator": 170
+      },
+      {
+        "index": 251,
+        "Prey": 1253,
+        "Predator": 163
+      },
+      {
+        "index": 252,
+        "Prey": 1245,
+        "Predator": 166
+      },
+      {
+        "index": 253,
+        "Prey": 1245,
+        "Predator": 165
+      },
+      {
+        "index": 254,
+        "Prey": 1254,
+        "Predator": 164
+      },
+      {
+        "index": 255,
+        "Prey": 1248,
+        "Predator": 162
+      },
+      {
+        "index": 256,
+        "Prey": 1250,
+        "Predator": 160
+      },
+      {
+        "index": 257,
+        "Prey": 1256,
+        "Predator": 159
+      },
+      {
+        "index": 258,
+        "Prey": 1259,
+        "Predator": 159
+      },
+      {
+        "index": 259,
+        "Prey": 1257,
+        "Predator": 160
+      },
+      {
+        "index": 260,
+        "Prey": 1255,
+        "Predator": 158
+      },
+      {
+        "index": 261,
+        "Prey": 1248,
+        "Predator": 158
+      },
+      {
+        "index": 262,
+        "Prey": 1246,
+        "Predator": 158
+      },
+      {
+        "index": 263,
+        "Prey": 1230,
+        "Predator": 160
+      },
+      {
+        "index": 264,
+        "Prey": 1215,
+        "Predator": 161
+      },
+      {
+        "index": 265,
+        "Prey": 1211,
+        "Predator": 166
+      },
+      {
+        "index": 266,
+        "Prey": 1219,
+        "Predator": 168
+      },
+      {
+        "index": 267,
+        "Prey": 1228,
+        "Predator": 172
+      },
+      {
+        "index": 268,
+        "Prey": 1241,
+        "Predator": 166
+      },
+      {
+        "index": 269,
+        "Prey": 1238,
+        "Predator": 164
+      },
+      {
+        "index": 270,
+        "Prey": 1243,
+        "Predator": 161
+      },
+      {
+        "index": 271,
+        "Prey": 1253,
+        "Predator": 159
+      },
+      {
+        "index": 272,
+        "Prey": 1263,
+        "Predator": 153
+      },
+      {
+        "index": 273,
+        "Prey": 1261,
+        "Predator": 153
+      },
+      {
+        "index": 274,
+        "Prey": 1259,
+        "Predator": 149
+      },
+      {
+        "index": 275,
+        "Prey": 1271,
+        "Predator": 150
+      },
+      {
+        "index": 276,
+        "Prey": 1283,
+        "Predator": 149
+      },
+      {
+        "index": 277,
+        "Prey": 1284,
+        "Predator": 152
+      },
+      {
+        "index": 278,
+        "Prey": 1286,
+        "Predator": 155
+      },
+      {
+        "index": 279,
+        "Prey": 1287,
+        "Predator": 153
+      },
+      {
+        "index": 280,
+        "Prey": 1289,
+        "Predator": 157
+      },
+      {
+        "index": 281,
+        "Prey": 1294,
+        "Predator": 160
+      },
+      {
+        "index": 282,
+        "Prey": 1297,
+        "Predator": 160
+      },
+      {
+        "index": 283,
+        "Prey": 1294,
+        "Predator": 162
+      },
+      {
+        "index": 284,
+        "Prey": 1316,
+        "Predator": 165
+      },
+      {
+        "index": 285,
+        "Prey": 1316,
+        "Predator": 163
+      },
+      {
+        "index": 286,
+        "Prey": 1311,
+        "Predator": 163
+      },
+      {
+        "index": 287,
+        "Prey": 1314,
+        "Predator": 161
+      },
+      {
+        "index": 288,
+        "Prey": 1316,
+        "Predator": 159
+      },
+      {
+        "index": 289,
+        "Prey": 1325,
+        "Predator": 159
+      },
+      {
+        "index": 290,
+        "Prey": 1325,
+        "Predator": 161
+      },
+      {
+        "index": 291,
+        "Prey": 1322,
+        "Predator": 161
+      },
+      {
+        "index": 292,
+        "Prey": 1307,
+        "Predator": 165
+      },
+      {
+        "index": 293,
+        "Prey": 1299,
+        "Predator": 165
+      },
+      {
+        "index": 294,
+        "Prey": 1304,
+        "Predator": 165
+      },
+      {
+        "index": 295,
+        "Prey": 1299,
+        "Predator": 168
+      },
+      {
+        "index": 296,
+        "Prey": 1290,
+        "Predator": 168
+      },
+      {
+        "index": 297,
+        "Prey": 1289,
+        "Predator": 171
+      },
+      {
+        "index": 298,
+        "Prey": 1284,
+        "Predator": 173
+      },
+      {
+        "index": 299,
+        "Prey": 1277,
+        "Predator": 174
+      },
+      {
+        "index": 300,
+        "Prey": 1260,
+        "Predator": 176
+      },
+      {
+        "index": 301,
+        "Prey": 1266,
+        "Predator": 176
+      },
+      {
+        "index": 302,
+        "Prey": 1265,
+        "Predator": 173
+      },
+      {
+        "index": 303,
+        "Prey": 1263,
+        "Predator": 172
+      },
+      {
+        "index": 304,
+        "Prey": 1260,
+        "Predator": 170
+      },
+      {
+        "index": 305,
+        "Prey": 1260,
+        "Predator": 175
+      },
+      {
+        "index": 306,
+        "Prey": 1257,
+        "Predator": 176
+      },
+      {
+        "index": 307,
+        "Prey": 1242,
+        "Predator": 178
+      },
+      {
+        "index": 308,
+        "Prey": 1224,
+        "Predator": 180
+      },
+      {
+        "index": 309,
+        "Prey": 1214,
+        "Predator": 180
+      },
+      {
+        "index": 310,
+        "Prey": 1207,
+        "Predator": 175
+      },
+      {
+        "index": 311,
+        "Prey": 1202,
+        "Predator": 176
+      },
+      {
+        "index": 312,
+        "Prey": 1189,
+        "Predator": 177
+      },
+      {
+        "index": 313,
+        "Prey": 1190,
+        "Predator": 176
+      },
+      {
+        "index": 314,
+        "Prey": 1175,
+        "Predator": 174
+      },
+      {
+        "index": 315,
+        "Prey": 1167,
+        "Predator": 170
+      },
+      {
+        "index": 316,
+        "Prey": 1168,
+        "Predator": 173
+      },
+      {
+        "index": 317,
+        "Prey": 1163,
+        "Predator": 167
+      },
+      {
+        "index": 318,
+        "Prey": 1161,
+        "Predator": 167
+      },
+      {
+        "index": 319,
+        "Prey": 1171,
+        "Predator": 164
+      },
+      {
+        "index": 320,
+        "Prey": 1162,
+        "Predator": 165
+      },
+      {
+        "index": 321,
+        "Prey": 1175,
+        "Predator": 164
+      },
+      {
+        "index": 322,
+        "Prey": 1164,
+        "Predator": 162
+      },
+      {
+        "index": 323,
+        "Prey": 1147,
+        "Predator": 159
+      },
+      {
+        "index": 324,
+        "Prey": 1149,
+        "Predator": 155
+      },
+      {
+        "index": 325,
+        "Prey": 1159,
+        "Predator": 161
+      },
+      {
+        "index": 326,
+        "Prey": 1154,
+        "Predator": 160
+      },
+      {
+        "index": 327,
+        "Prey": 1166,
+        "Predator": 154
+      },
+      {
+        "index": 328,
+        "Prey": 1157,
+        "Predator": 152
+      },
+      {
+        "index": 329,
+        "Prey": 1168,
+        "Predator": 151
+      },
+      {
+        "index": 330,
+        "Prey": 1169,
+        "Predator": 153
+      },
+      {
+        "index": 331,
+        "Prey": 1163,
+        "Predator": 148
+      },
+      {
+        "index": 332,
+        "Prey": 1171,
+        "Predator": 149
+      },
+      {
+        "index": 333,
+        "Prey": 1175,
+        "Predator": 144
+      },
+      {
+        "index": 334,
+        "Prey": 1181,
+        "Predator": 147
+      },
+      {
+        "index": 335,
+        "Prey": 1180,
+        "Predator": 147
+      },
+      {
+        "index": 336,
+        "Prey": 1174,
+        "Predator": 142
+      },
+      {
+        "index": 337,
+        "Prey": 1178,
+        "Predator": 138
+      },
+      {
+        "index": 338,
+        "Prey": 1171,
+        "Predator": 139
+      },
+      {
+        "index": 339,
+        "Prey": 1169,
+        "Predator": 139
+      },
+      {
+        "index": 340,
+        "Prey": 1177,
+        "Predator": 138
+      },
+      {
+        "index": 341,
+        "Prey": 1182,
+        "Predator": 138
+      },
+      {
+        "index": 342,
+        "Prey": 1182,
+        "Predator": 137
+      },
+      {
+        "index": 343,
+        "Prey": 1185,
+        "Predator": 136
+      },
+      {
+        "index": 344,
+        "Prey": 1182,
+        "Predator": 141
+      },
+      {
+        "index": 345,
+        "Prey": 1196,
+        "Predator": 142
+      },
+      {
+        "index": 346,
+        "Prey": 1197,
+        "Predator": 142
+      },
+      {
+        "index": 347,
+        "Prey": 1205,
+        "Predator": 142
+      },
+      {
+        "index": 348,
+        "Prey": 1210,
+        "Predator": 140
+      },
+      {
+        "index": 349,
+        "Prey": 1204,
+        "Predator": 139
+      },
+      {
+        "index": 350,
+        "Prey": 1200,
+        "Predator": 139
+      },
+      {
+        "index": 351,
+        "Prey": 1190,
+        "Predator": 140
+      },
+      {
+        "index": 352,
+        "Prey": 1165,
+        "Predator": 138
+      },
+      {
+        "index": 353,
+        "Prey": 1171,
+        "Predator": 140
+      },
+      {
+        "index": 354,
+        "Prey": 1161,
+        "Predator": 139
+      },
+      {
+        "index": 355,
+        "Prey": 1162,
+        "Predator": 139
+      },
+      {
+        "index": 356,
+        "Prey": 1164,
+        "Predator": 142
+      },
+      {
+        "index": 357,
+        "Prey": 1169,
+        "Predator": 136
+      },
+      {
+        "index": 358,
+        "Prey": 1174,
+        "Predator": 135
+      },
+      {
+        "index": 359,
+        "Prey": 1162,
+        "Predator": 130
+      },
+      {
+        "index": 360,
+        "Prey": 1168,
+        "Predator": 129
+      },
+      {
+        "index": 361,
+        "Prey": 1178,
+        "Predator": 132
+      },
+      {
+        "index": 362,
+        "Prey": 1186,
+        "Predator": 133
+      },
+      {
+        "index": 363,
+        "Prey": 1191,
+        "Predator": 134
+      },
+      {
+        "index": 364,
+        "Prey": 1193,
+        "Predator": 134
+      },
+      {
+        "index": 365,
+        "Prey": 1208,
+        "Predator": 131
+      },
+      {
+        "index": 366,
+        "Prey": 1206,
+        "Predator": 133
+      },
+      {
+        "index": 367,
+        "Prey": 1212,
+        "Predator": 133
+      },
+      {
+        "index": 368,
+        "Prey": 1222,
+        "Predator": 130
+      },
+      {
+        "index": 369,
+        "Prey": 1230,
+        "Predator": 131
+      },
+      {
+        "index": 370,
+        "Prey": 1227,
+        "Predator": 135
+      },
+      {
+        "index": 371,
+        "Prey": 1232,
+        "Predator": 132
+      },
+      {
+        "index": 372,
+        "Prey": 1238,
+        "Predator": 133
+      },
+      {
+        "index": 373,
+        "Prey": 1238,
+        "Predator": 136
+      },
+      {
+        "index": 374,
+        "Prey": 1241,
+        "Predator": 137
+      },
+      {
+        "index": 375,
+        "Prey": 1248,
+        "Predator": 137
+      },
+      {
+        "index": 376,
+        "Prey": 1242,
+        "Predator": 136
+      },
+      {
+        "index": 377,
+        "Prey": 1231,
+        "Predator": 140
+      },
+      {
+        "index": 378,
+        "Prey": 1219,
+        "Predator": 142
+      },
+      {
+        "index": 379,
+        "Prey": 1226,
+        "Predator": 137
+      },
+      {
+        "index": 380,
+        "Prey": 1230,
+        "Predator": 142
+      },
+      {
+        "index": 381,
+        "Prey": 1231,
+        "Predator": 145
+      },
+      {
+        "index": 382,
+        "Prey": 1245,
+        "Predator": 144
+      },
+      {
+        "index": 383,
+        "Prey": 1252,
+        "Predator": 150
+      },
+      {
+        "index": 384,
+        "Prey": 1257,
+        "Predator": 150
+      },
+      {
+        "index": 385,
+        "Prey": 1253,
+        "Predator": 146
+      },
+      {
+        "index": 386,
+        "Prey": 1262,
+        "Predator": 149
+      },
+      {
+        "index": 387,
+        "Prey": 1262,
+        "Predator": 149
+      },
+      {
+        "index": 388,
+        "Prey": 1255,
+        "Predator": 151
+      },
+      {
+        "index": 389,
+        "Prey": 1259,
+        "Predator": 155
+      },
+      {
+        "index": 390,
+        "Prey": 1268,
+        "Predator": 150
+      },
+      {
+        "index": 391,
+        "Prey": 1253,
+        "Predator": 147
+      },
+      {
+        "index": 392,
+        "Prey": 1254,
+        "Predator": 151
+      },
+      {
+        "index": 393,
+        "Prey": 1249,
+        "Predator": 155
+      },
+      {
+        "index": 394,
+        "Prey": 1241,
+        "Predator": 158
+      },
+      {
+        "index": 395,
+        "Prey": 1229,
+        "Predator": 160
+      },
+      {
+        "index": 396,
+        "Prey": 1226,
+        "Predator": 159
+      },
+      {
+        "index": 397,
+        "Prey": 1227,
+        "Predator": 153
+      },
+      {
+        "index": 398,
+        "Prey": 1221,
+        "Predator": 152
+      },
+      {
+        "index": 399,
+        "Prey": 1219,
+        "Predator": 152
+      }
+    ]
+  }
+}

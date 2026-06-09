@@ -1,0 +1,1016 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    }
+  },
+  "hconcat": [
+    {
+      "layer": [
+        {
+          "data": {
+            "name": "data-9f8cf4b56a098049187752347a53061e"
+          },
+          "mark": {
+            "type": "square",
+            "opacity": 0.4,
+            "size": 115
+          },
+          "encoding": {
+            "color": {
+              "field": "Tipo",
+              "scale": {
+                "range": [
+                  "#006400",
+                  "#32CD32"
+                ]
+              },
+              "type": "nominal"
+            },
+            "x": {
+              "axis": null,
+              "field": "x",
+              "type": "ordinal"
+            },
+            "y": {
+              "axis": null,
+              "field": "y",
+              "sort": "descending",
+              "type": "ordinal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-95ea9ed95f92ca5628038d9a1c87f57c"
+          },
+          "mark": {
+            "type": "circle",
+            "opacity": 1,
+            "size": 100
+          },
+          "encoding": {
+            "color": {
+              "field": "Agente",
+              "scale": {
+                "domain": [
+                  "Presa",
+                  "Depredador"
+                ],
+                "range": [
+                  "blue",
+                  "red"
+                ]
+              },
+              "type": "nominal"
+            },
+            "x": {
+              "field": "x",
+              "type": "ordinal"
+            },
+            "y": {
+              "field": "y",
+              "type": "ordinal"
+            }
+          }
+        }
+      ],
+      "height": 250,
+      "resolve": {
+        "scale": {
+          "color": "independent"
+        }
+      },
+      "title": "A) Aislado",
+      "width": 250
+    },
+    {
+      "layer": [
+        {
+          "data": {
+            "name": "data-8c510ad1b1f81180f4f226517790c492"
+          },
+          "mark": {
+            "type": "square",
+            "opacity": 0.4,
+            "size": 115
+          },
+          "encoding": {
+            "color": {
+              "field": "Tipo",
+              "scale": {
+                "range": [
+                  "#006400",
+                  "#32CD32"
+                ]
+              },
+              "type": "nominal"
+            },
+            "x": {
+              "axis": null,
+              "field": "x",
+              "type": "ordinal"
+            },
+            "y": {
+              "axis": null,
+              "field": "y",
+              "sort": "descending",
+              "type": "ordinal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-0d965d257b53dac9d213cfbcb4dc728f"
+          },
+          "mark": {
+            "type": "circle",
+            "opacity": 1,
+            "size": 100
+          },
+          "encoding": {
+            "color": {
+              "field": "Agente",
+              "scale": {
+                "domain": [
+                  "Presa",
+                  "Depredador"
+                ],
+                "range": [
+                  "blue",
+                  "red"
+                ]
+              },
+              "type": "nominal"
+            },
+            "x": {
+              "field": "x",
+              "type": "ordinal"
+            },
+            "y": {
+              "field": "y",
+              "type": "ordinal"
+            }
+          }
+        }
+      ],
+      "height": 250,
+      "resolve": {
+        "scale": {
+          "color": "independent"
+        }
+      },
+      "title": "B) Conectado",
+      "width": 250
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "datasets": {
+    "data-9f8cf4b56a098049187752347a53061e": [
+      {
+        "x": 3,
+        "y": 22,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 3,
+        "y": 23,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 3,
+        "y": 24,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 3,
+        "y": 25,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 3,
+        "y": 26,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 4,
+        "y": 22,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 4,
+        "y": 23,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 4,
+        "y": 24,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 4,
+        "y": 25,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 4,
+        "y": 26,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 5,
+        "y": 22,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 5,
+        "y": 23,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 5,
+        "y": 24,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 5,
+        "y": 25,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 5,
+        "y": 26,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 6,
+        "y": 22,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 6,
+        "y": 23,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 6,
+        "y": 24,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 6,
+        "y": 25,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 6,
+        "y": 26,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 7,
+        "y": 22,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 7,
+        "y": 23,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 7,
+        "y": 24,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 7,
+        "y": 25,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 7,
+        "y": 26,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 22,
+        "y": 3,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 22,
+        "y": 4,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 22,
+        "y": 5,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 22,
+        "y": 6,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 22,
+        "y": 7,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 23,
+        "y": 3,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 23,
+        "y": 4,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 23,
+        "y": 5,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 23,
+        "y": 6,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 23,
+        "y": 7,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 24,
+        "y": 3,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 24,
+        "y": 4,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 24,
+        "y": 5,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 24,
+        "y": 6,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 24,
+        "y": 7,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 25,
+        "y": 3,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 25,
+        "y": 4,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 25,
+        "y": 5,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 25,
+        "y": 6,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 25,
+        "y": 7,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 26,
+        "y": 3,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 26,
+        "y": 4,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 26,
+        "y": 5,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 26,
+        "y": 6,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 26,
+        "y": 7,
+        "Tipo": "Isla"
+      }
+    ],
+    "data-95ea9ed95f92ca5628038d9a1c87f57c": [
+      {
+        "x": 24,
+        "y": 4,
+        "Agente": "Depredador",
+        "Escenario": "AISLADO"
+      },
+      {
+        "x": 5,
+        "y": 24,
+        "Agente": "Depredador",
+        "Escenario": "AISLADO"
+      },
+      {
+        "x": 6,
+        "y": 22,
+        "Agente": "Depredador",
+        "Escenario": "AISLADO"
+      },
+      {
+        "x": 24,
+        "y": 7,
+        "Agente": "Depredador",
+        "Escenario": "AISLADO"
+      },
+      {
+        "x": 6,
+        "y": 24,
+        "Agente": "Depredador",
+        "Escenario": "AISLADO"
+      },
+      {
+        "x": 23,
+        "y": 3,
+        "Agente": "Depredador",
+        "Escenario": "AISLADO"
+      },
+      {
+        "x": 4,
+        "y": 24,
+        "Agente": "Depredador",
+        "Escenario": "AISLADO"
+      },
+      {
+        "x": 5,
+        "y": 23,
+        "Agente": "Depredador",
+        "Escenario": "AISLADO"
+      },
+      {
+        "x": 4,
+        "y": 25,
+        "Agente": "Depredador",
+        "Escenario": "AISLADO"
+      },
+      {
+        "x": 23,
+        "y": 7,
+        "Agente": "Depredador",
+        "Escenario": "AISLADO"
+      },
+      {
+        "x": 8,
+        "y": 22,
+        "Agente": "Depredador",
+        "Escenario": "AISLADO"
+      }
+    ],
+    "data-8c510ad1b1f81180f4f226517790c492": [
+      {
+        "x": 3,
+        "y": 22,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 3,
+        "y": 23,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 3,
+        "y": 24,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 3,
+        "y": 25,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 3,
+        "y": 26,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 4,
+        "y": 22,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 4,
+        "y": 23,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 4,
+        "y": 24,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 4,
+        "y": 25,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 4,
+        "y": 26,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 5,
+        "y": 22,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 5,
+        "y": 23,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 5,
+        "y": 24,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 5,
+        "y": 25,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 5,
+        "y": 26,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 6,
+        "y": 22,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 6,
+        "y": 23,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 6,
+        "y": 24,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 6,
+        "y": 25,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 6,
+        "y": 26,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 7,
+        "y": 22,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 7,
+        "y": 23,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 7,
+        "y": 24,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 7,
+        "y": 25,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 7,
+        "y": 26,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 22,
+        "y": 3,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 22,
+        "y": 4,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 22,
+        "y": 5,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 22,
+        "y": 6,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 22,
+        "y": 7,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 23,
+        "y": 3,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 23,
+        "y": 4,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 23,
+        "y": 5,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 23,
+        "y": 6,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 23,
+        "y": 7,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 24,
+        "y": 3,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 24,
+        "y": 4,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 24,
+        "y": 5,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 24,
+        "y": 6,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 24,
+        "y": 7,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 25,
+        "y": 3,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 25,
+        "y": 4,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 25,
+        "y": 5,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 25,
+        "y": 6,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 25,
+        "y": 7,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 26,
+        "y": 3,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 26,
+        "y": 4,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 26,
+        "y": 5,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 26,
+        "y": 6,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 26,
+        "y": 7,
+        "Tipo": "Isla"
+      },
+      {
+        "x": 8,
+        "y": 22,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 8,
+        "y": 21,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 9,
+        "y": 21,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 9,
+        "y": 20,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 10,
+        "y": 20,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 10,
+        "y": 19,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 11,
+        "y": 19,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 11,
+        "y": 18,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 12,
+        "y": 18,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 12,
+        "y": 17,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 13,
+        "y": 17,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 13,
+        "y": 16,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 14,
+        "y": 16,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 14,
+        "y": 15,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 15,
+        "y": 15,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 15,
+        "y": 14,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 16,
+        "y": 14,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 16,
+        "y": 13,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 17,
+        "y": 13,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 17,
+        "y": 12,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 18,
+        "y": 12,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 18,
+        "y": 11,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 19,
+        "y": 11,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 19,
+        "y": 10,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 20,
+        "y": 10,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 20,
+        "y": 9,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 21,
+        "y": 9,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 21,
+        "y": 8,
+        "Tipo": "Corredor"
+      },
+      {
+        "x": 22,
+        "y": 8,
+        "Tipo": "Corredor"
+      }
+    ],
+    "data-0d965d257b53dac9d213cfbcb4dc728f": [
+      {
+        "x": 5,
+        "y": 23,
+        "Agente": "Depredador",
+        "Escenario": "CONECTADO"
+      },
+      {
+        "x": 26,
+        "y": 2,
+        "Agente": "Depredador",
+        "Escenario": "CONECTADO"
+      },
+      {
+        "x": 7,
+        "y": 23,
+        "Agente": "Depredador",
+        "Escenario": "CONECTADO"
+      },
+      {
+        "x": 26,
+        "y": 5,
+        "Agente": "Depredador",
+        "Escenario": "CONECTADO"
+      },
+      {
+        "x": 24,
+        "y": 5,
+        "Agente": "Depredador",
+        "Escenario": "CONECTADO"
+      },
+      {
+        "x": 4,
+        "y": 21,
+        "Agente": "Depredador",
+        "Escenario": "CONECTADO"
+      },
+      {
+        "x": 23,
+        "y": 8,
+        "Agente": "Depredador",
+        "Escenario": "CONECTADO"
+      },
+      {
+        "x": 23,
+        "y": 5,
+        "Agente": "Depredador",
+        "Escenario": "CONECTADO"
+      },
+      {
+        "x": 4,
+        "y": 26,
+        "Agente": "Depredador",
+        "Escenario": "CONECTADO"
+      },
+      {
+        "x": 3,
+        "y": 25,
+        "Agente": "Depredador",
+        "Escenario": "CONECTADO"
+      },
+      {
+        "x": 13,
+        "y": 17,
+        "Agente": "Presa",
+        "Escenario": "CONECTADO"
+      },
+      {
+        "x": 14,
+        "y": 15,
+        "Agente": "Presa",
+        "Escenario": "CONECTADO"
+      },
+      {
+        "x": 9,
+        "y": 21,
+        "Agente": "Presa",
+        "Escenario": "CONECTADO"
+      },
+      {
+        "x": 8,
+        "y": 22,
+        "Agente": "Presa",
+        "Escenario": "CONECTADO"
+      },
+      {
+        "x": 9,
+        "y": 20,
+        "Agente": "Presa",
+        "Escenario": "CONECTADO"
+      },
+      {
+        "x": 14,
+        "y": 15,
+        "Agente": "Presa",
+        "Escenario": "CONECTADO"
+      },
+      {
+        "x": 11,
+        "y": 18,
+        "Agente": "Presa",
+        "Escenario": "CONECTADO"
+      },
+      {
+        "x": 10,
+        "y": 19,
+        "Agente": "Presa",
+        "Escenario": "CONECTADO"
+      },
+      {
+        "x": 10,
+        "y": 20,
+        "Agente": "Presa",
+        "Escenario": "CONECTADO"
+      },
+      {
+        "x": 11,
+        "y": 18,
+        "Agente": "Presa",
+        "Escenario": "CONECTADO"
+      },
+      {
+        "x": 6,
+        "y": 22,
+        "Agente": "Presa",
+        "Escenario": "CONECTADO"
+      }
+    ]
+  }
+}

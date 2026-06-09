@@ -1,0 +1,78 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-f31ebc8ee279a0680bbd4aef398513cb"
+  },
+  "mark": {
+    "type": "line",
+    "color": "purple",
+    "point": true
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "Tama\u00f1o H\u00e1bitat (Lado)",
+        "type": "quantitative"
+      },
+      {
+        "field": "Riesgo de Extinci\u00f3n",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "Tama\u00f1o H\u00e1bitat (Lado)",
+      "title": "Dimensi\u00f3n del H\u00e1bitat (Lado del Grid)",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Riesgo de Extinci\u00f3n",
+      "title": "Probabilidad de Colapso (0-1)",
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "title": "Efecto de la P\u00e9rdida de H\u00e1bitat en la Resiliencia",
+  "width": 500,
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "datasets": {
+    "data-f31ebc8ee279a0680bbd4aef398513cb": [
+      {
+        "Tama\u00f1o H\u00e1bitat (Lado)": 5,
+        "Riesgo de Extinci\u00f3n": 1.0
+      },
+      {
+        "Tama\u00f1o H\u00e1bitat (Lado)": 6,
+        "Riesgo de Extinci\u00f3n": 1.0
+      },
+      {
+        "Tama\u00f1o H\u00e1bitat (Lado)": 8,
+        "Riesgo de Extinci\u00f3n": 0.98
+      },
+      {
+        "Tama\u00f1o H\u00e1bitat (Lado)": 10,
+        "Riesgo de Extinci\u00f3n": 0.14
+      },
+      {
+        "Tama\u00f1o H\u00e1bitat (Lado)": 12,
+        "Riesgo de Extinci\u00f3n": 0.0
+      },
+      {
+        "Tama\u00f1o H\u00e1bitat (Lado)": 15,
+        "Riesgo de Extinci\u00f3n": 0.0
+      },
+      {
+        "Tama\u00f1o H\u00e1bitat (Lado)": 20,
+        "Riesgo de Extinci\u00f3n": 0.0
+      },
+      {
+        "Tama\u00f1o H\u00e1bitat (Lado)": 25,
+        "Riesgo de Extinci\u00f3n": 0.0
+      }
+    ]
+  }
+}

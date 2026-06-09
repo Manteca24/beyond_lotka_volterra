@@ -1,0 +1,104 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-3c4190cfd5983c760496977a19009a41"
+  },
+  "mark": {
+    "type": "line",
+    "color": "purple",
+    "point": true
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "Poblaci\u00f3n Inicial",
+        "type": "quantitative"
+      },
+      {
+        "field": "Probabilidad Extinci\u00f3n",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "Poblaci\u00f3n Inicial",
+      "title": "Tama\u00f1o Inicial de Poblaci\u00f3n de Presas",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Probabilidad Extinci\u00f3n",
+      "scale": {
+        "domain": [
+          0,
+          1.05
+        ]
+      },
+      "title": "Probabilidad Extinci\u00f3n",
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "title": "Efecto Allee",
+  "width": 500,
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "datasets": {
+    "data-3c4190cfd5983c760496977a19009a41": [
+      {
+        "Poblaci\u00f3n Inicial": 1,
+        "Probabilidad Extinci\u00f3n": 0.995
+      },
+      {
+        "Poblaci\u00f3n Inicial": 10,
+        "Probabilidad Extinci\u00f3n": 0.935
+      },
+      {
+        "Poblaci\u00f3n Inicial": 30,
+        "Probabilidad Extinci\u00f3n": 0.705
+      },
+      {
+        "Poblaci\u00f3n Inicial": 50,
+        "Probabilidad Extinci\u00f3n": 0.42
+      },
+      {
+        "Poblaci\u00f3n Inicial": 70,
+        "Probabilidad Extinci\u00f3n": 0.365
+      },
+      {
+        "Poblaci\u00f3n Inicial": 100,
+        "Probabilidad Extinci\u00f3n": 0.23
+      },
+      {
+        "Poblaci\u00f3n Inicial": 130,
+        "Probabilidad Extinci\u00f3n": 0.15
+      },
+      {
+        "Poblaci\u00f3n Inicial": 150,
+        "Probabilidad Extinci\u00f3n": 0.09
+      },
+      {
+        "Poblaci\u00f3n Inicial": 200,
+        "Probabilidad Extinci\u00f3n": 0.13
+      },
+      {
+        "Poblaci\u00f3n Inicial": 300,
+        "Probabilidad Extinci\u00f3n": 0.115
+      },
+      {
+        "Poblaci\u00f3n Inicial": 400,
+        "Probabilidad Extinci\u00f3n": 0.095
+      },
+      {
+        "Poblaci\u00f3n Inicial": 500,
+        "Probabilidad Extinci\u00f3n": 0.11
+      },
+      {
+        "Poblaci\u00f3n Inicial": 600,
+        "Probabilidad Extinci\u00f3n": 0.13
+      }
+    ]
+  }
+}

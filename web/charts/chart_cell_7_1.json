@@ -1,0 +1,3132 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    },
+    "title": {
+      "anchor": "middle",
+      "color": "black",
+      "font": "Arial",
+      "fontSize": 14
+    }
+  },
+  "hconcat": [
+    {
+      "layer": [
+        {
+          "data": {
+            "name": "data-89e045a0cc0c68caf1927504c75f08b3"
+          },
+          "mark": {
+            "type": "line",
+            "color": "purple",
+            "opacity": 0.8,
+            "strokeWidth": 2
+          },
+          "encoding": {
+            "order": {
+              "field": "Tiempo",
+              "sort": "ascending",
+              "type": "quantitative"
+            },
+            "x": {
+              "field": "Prey",
+              "title": "Densidad de Presas (N)",
+              "type": "quantitative"
+            },
+            "y": {
+              "field": "Predator",
+              "title": "Densidad de Depredadores (P)",
+              "type": "quantitative"
+            }
+          },
+          "title": "A) Espacio de Fases"
+        },
+        {
+          "data": {
+            "name": "data-880ad5bcfe64ca5a2b3f6412585c4d9a"
+          },
+          "mark": {
+            "type": "circle",
+            "color": "black",
+            "size": 150
+          },
+          "encoding": {
+            "x": {
+              "field": "Prey",
+              "type": "quantitative"
+            },
+            "y": {
+              "field": "Predator",
+              "type": "quantitative"
+            }
+          }
+        }
+      ],
+      "height": 300,
+      "width": 350
+    },
+    {
+      "data": {
+        "name": "data-b6cdf879b884e02d70ce2917a229e75a"
+      },
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5
+      },
+      "encoding": {
+        "color": {
+          "field": "Especie",
+          "legend": {
+            "orient": "bottom",
+            "title": "Especie"
+          },
+          "scale": {
+            "domain": [
+              "Prey",
+              "Predator"
+            ],
+            "range": [
+              "blue",
+              "#d62728"
+            ]
+          },
+          "type": "nominal"
+        },
+        "x": {
+          "field": "Tiempo",
+          "title": "Tiempo (Puntos discretos)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Poblaci\u00f3n",
+          "title": "N\u00famero de Individuos",
+          "type": "quantitative"
+        }
+      },
+      "height": 300,
+      "title": "B) Serie Temporal",
+      "width": 400
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    }
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "datasets": {
+    "data-89e045a0cc0c68caf1927504c75f08b3": [
+      {
+        "Tiempo": 0,
+        "Prey": 80,
+        "Predator": 10
+      },
+      {
+        "Tiempo": 1,
+        "Prey": 83,
+        "Predator": 10
+      },
+      {
+        "Tiempo": 2,
+        "Prey": 92,
+        "Predator": 9
+      },
+      {
+        "Tiempo": 3,
+        "Prey": 99,
+        "Predator": 9
+      },
+      {
+        "Tiempo": 4,
+        "Prey": 104,
+        "Predator": 10
+      },
+      {
+        "Tiempo": 5,
+        "Prey": 108,
+        "Predator": 12
+      },
+      {
+        "Tiempo": 6,
+        "Prey": 116,
+        "Predator": 10
+      },
+      {
+        "Tiempo": 7,
+        "Prey": 125,
+        "Predator": 11
+      },
+      {
+        "Tiempo": 8,
+        "Prey": 129,
+        "Predator": 11
+      },
+      {
+        "Tiempo": 9,
+        "Prey": 136,
+        "Predator": 12
+      },
+      {
+        "Tiempo": 10,
+        "Prey": 143,
+        "Predator": 14
+      },
+      {
+        "Tiempo": 11,
+        "Prey": 148,
+        "Predator": 15
+      },
+      {
+        "Tiempo": 12,
+        "Prey": 151,
+        "Predator": 16
+      },
+      {
+        "Tiempo": 13,
+        "Prey": 160,
+        "Predator": 17
+      },
+      {
+        "Tiempo": 14,
+        "Prey": 165,
+        "Predator": 21
+      },
+      {
+        "Tiempo": 15,
+        "Prey": 176,
+        "Predator": 23
+      },
+      {
+        "Tiempo": 16,
+        "Prey": 178,
+        "Predator": 26
+      },
+      {
+        "Tiempo": 17,
+        "Prey": 184,
+        "Predator": 29
+      },
+      {
+        "Tiempo": 18,
+        "Prey": 192,
+        "Predator": 29
+      },
+      {
+        "Tiempo": 19,
+        "Prey": 196,
+        "Predator": 34
+      },
+      {
+        "Tiempo": 20,
+        "Prey": 203,
+        "Predator": 32
+      },
+      {
+        "Tiempo": 21,
+        "Prey": 206,
+        "Predator": 33
+      },
+      {
+        "Tiempo": 22,
+        "Prey": 214,
+        "Predator": 33
+      },
+      {
+        "Tiempo": 23,
+        "Prey": 218,
+        "Predator": 32
+      },
+      {
+        "Tiempo": 24,
+        "Prey": 228,
+        "Predator": 36
+      },
+      {
+        "Tiempo": 25,
+        "Prey": 241,
+        "Predator": 35
+      },
+      {
+        "Tiempo": 26,
+        "Prey": 249,
+        "Predator": 33
+      },
+      {
+        "Tiempo": 27,
+        "Prey": 256,
+        "Predator": 34
+      },
+      {
+        "Tiempo": 28,
+        "Prey": 263,
+        "Predator": 35
+      },
+      {
+        "Tiempo": 29,
+        "Prey": 282,
+        "Predator": 35
+      },
+      {
+        "Tiempo": 30,
+        "Prey": 294,
+        "Predator": 43
+      },
+      {
+        "Tiempo": 31,
+        "Prey": 297,
+        "Predator": 48
+      },
+      {
+        "Tiempo": 32,
+        "Prey": 290,
+        "Predator": 56
+      },
+      {
+        "Tiempo": 33,
+        "Prey": 289,
+        "Predator": 64
+      },
+      {
+        "Tiempo": 34,
+        "Prey": 278,
+        "Predator": 63
+      },
+      {
+        "Tiempo": 35,
+        "Prey": 272,
+        "Predator": 67
+      },
+      {
+        "Tiempo": 36,
+        "Prey": 272,
+        "Predator": 71
+      },
+      {
+        "Tiempo": 37,
+        "Prey": 265,
+        "Predator": 83
+      },
+      {
+        "Tiempo": 38,
+        "Prey": 259,
+        "Predator": 93
+      },
+      {
+        "Tiempo": 39,
+        "Prey": 245,
+        "Predator": 101
+      },
+      {
+        "Tiempo": 40,
+        "Prey": 223,
+        "Predator": 112
+      },
+      {
+        "Tiempo": 41,
+        "Prey": 189,
+        "Predator": 119
+      },
+      {
+        "Tiempo": 42,
+        "Prey": 164,
+        "Predator": 124
+      },
+      {
+        "Tiempo": 43,
+        "Prey": 138,
+        "Predator": 126
+      },
+      {
+        "Tiempo": 44,
+        "Prey": 123,
+        "Predator": 134
+      },
+      {
+        "Tiempo": 45,
+        "Prey": 105,
+        "Predator": 138
+      },
+      {
+        "Tiempo": 46,
+        "Prey": 91,
+        "Predator": 133
+      },
+      {
+        "Tiempo": 47,
+        "Prey": 90,
+        "Predator": 124
+      },
+      {
+        "Tiempo": 48,
+        "Prey": 77,
+        "Predator": 123
+      },
+      {
+        "Tiempo": 49,
+        "Prey": 67,
+        "Predator": 124
+      },
+      {
+        "Tiempo": 50,
+        "Prey": 58,
+        "Predator": 120
+      },
+      {
+        "Tiempo": 51,
+        "Prey": 53,
+        "Predator": 109
+      },
+      {
+        "Tiempo": 52,
+        "Prey": 53,
+        "Predator": 101
+      },
+      {
+        "Tiempo": 53,
+        "Prey": 47,
+        "Predator": 95
+      },
+      {
+        "Tiempo": 54,
+        "Prey": 42,
+        "Predator": 91
+      },
+      {
+        "Tiempo": 55,
+        "Prey": 42,
+        "Predator": 88
+      },
+      {
+        "Tiempo": 56,
+        "Prey": 43,
+        "Predator": 84
+      },
+      {
+        "Tiempo": 57,
+        "Prey": 38,
+        "Predator": 80
+      },
+      {
+        "Tiempo": 58,
+        "Prey": 36,
+        "Predator": 75
+      },
+      {
+        "Tiempo": 59,
+        "Prey": 38,
+        "Predator": 72
+      },
+      {
+        "Tiempo": 60,
+        "Prey": 35,
+        "Predator": 65
+      },
+      {
+        "Tiempo": 61,
+        "Prey": 35,
+        "Predator": 61
+      },
+      {
+        "Tiempo": 62,
+        "Prey": 32,
+        "Predator": 59
+      },
+      {
+        "Tiempo": 63,
+        "Prey": 37,
+        "Predator": 51
+      },
+      {
+        "Tiempo": 64,
+        "Prey": 36,
+        "Predator": 48
+      },
+      {
+        "Tiempo": 65,
+        "Prey": 39,
+        "Predator": 42
+      },
+      {
+        "Tiempo": 66,
+        "Prey": 37,
+        "Predator": 37
+      },
+      {
+        "Tiempo": 67,
+        "Prey": 34,
+        "Predator": 32
+      },
+      {
+        "Tiempo": 68,
+        "Prey": 31,
+        "Predator": 32
+      },
+      {
+        "Tiempo": 69,
+        "Prey": 30,
+        "Predator": 29
+      },
+      {
+        "Tiempo": 70,
+        "Prey": 29,
+        "Predator": 24
+      },
+      {
+        "Tiempo": 71,
+        "Prey": 31,
+        "Predator": 22
+      },
+      {
+        "Tiempo": 72,
+        "Prey": 34,
+        "Predator": 22
+      },
+      {
+        "Tiempo": 73,
+        "Prey": 38,
+        "Predator": 20
+      },
+      {
+        "Tiempo": 74,
+        "Prey": 42,
+        "Predator": 18
+      },
+      {
+        "Tiempo": 75,
+        "Prey": 43,
+        "Predator": 17
+      },
+      {
+        "Tiempo": 76,
+        "Prey": 48,
+        "Predator": 14
+      },
+      {
+        "Tiempo": 77,
+        "Prey": 48,
+        "Predator": 15
+      },
+      {
+        "Tiempo": 78,
+        "Prey": 52,
+        "Predator": 15
+      },
+      {
+        "Tiempo": 79,
+        "Prey": 52,
+        "Predator": 15
+      },
+      {
+        "Tiempo": 80,
+        "Prey": 50,
+        "Predator": 15
+      },
+      {
+        "Tiempo": 81,
+        "Prey": 52,
+        "Predator": 14
+      },
+      {
+        "Tiempo": 82,
+        "Prey": 57,
+        "Predator": 14
+      },
+      {
+        "Tiempo": 83,
+        "Prey": 60,
+        "Predator": 13
+      },
+      {
+        "Tiempo": 84,
+        "Prey": 65,
+        "Predator": 13
+      },
+      {
+        "Tiempo": 85,
+        "Prey": 65,
+        "Predator": 13
+      },
+      {
+        "Tiempo": 86,
+        "Prey": 72,
+        "Predator": 12
+      },
+      {
+        "Tiempo": 87,
+        "Prey": 75,
+        "Predator": 13
+      },
+      {
+        "Tiempo": 88,
+        "Prey": 74,
+        "Predator": 14
+      },
+      {
+        "Tiempo": 89,
+        "Prey": 80,
+        "Predator": 15
+      },
+      {
+        "Tiempo": 90,
+        "Prey": 83,
+        "Predator": 14
+      },
+      {
+        "Tiempo": 91,
+        "Prey": 85,
+        "Predator": 12
+      },
+      {
+        "Tiempo": 92,
+        "Prey": 88,
+        "Predator": 11
+      },
+      {
+        "Tiempo": 93,
+        "Prey": 94,
+        "Predator": 11
+      },
+      {
+        "Tiempo": 94,
+        "Prey": 103,
+        "Predator": 9
+      },
+      {
+        "Tiempo": 95,
+        "Prey": 112,
+        "Predator": 8
+      },
+      {
+        "Tiempo": 96,
+        "Prey": 129,
+        "Predator": 8
+      },
+      {
+        "Tiempo": 97,
+        "Prey": 137,
+        "Predator": 8
+      },
+      {
+        "Tiempo": 98,
+        "Prey": 146,
+        "Predator": 6
+      },
+      {
+        "Tiempo": 99,
+        "Prey": 157,
+        "Predator": 8
+      },
+      {
+        "Tiempo": 100,
+        "Prey": 170,
+        "Predator": 8
+      },
+      {
+        "Tiempo": 101,
+        "Prey": 179,
+        "Predator": 7
+      },
+      {
+        "Tiempo": 102,
+        "Prey": 200,
+        "Predator": 8
+      },
+      {
+        "Tiempo": 103,
+        "Prey": 208,
+        "Predator": 8
+      },
+      {
+        "Tiempo": 104,
+        "Prey": 222,
+        "Predator": 9
+      },
+      {
+        "Tiempo": 105,
+        "Prey": 240,
+        "Predator": 11
+      },
+      {
+        "Tiempo": 106,
+        "Prey": 250,
+        "Predator": 12
+      },
+      {
+        "Tiempo": 107,
+        "Prey": 265,
+        "Predator": 13
+      },
+      {
+        "Tiempo": 108,
+        "Prey": 282,
+        "Predator": 15
+      },
+      {
+        "Tiempo": 109,
+        "Prey": 297,
+        "Predator": 18
+      },
+      {
+        "Tiempo": 110,
+        "Prey": 314,
+        "Predator": 20
+      },
+      {
+        "Tiempo": 111,
+        "Prey": 327,
+        "Predator": 26
+      },
+      {
+        "Tiempo": 112,
+        "Prey": 338,
+        "Predator": 32
+      },
+      {
+        "Tiempo": 113,
+        "Prey": 357,
+        "Predator": 35
+      },
+      {
+        "Tiempo": 114,
+        "Prey": 383,
+        "Predator": 42
+      },
+      {
+        "Tiempo": 115,
+        "Prey": 408,
+        "Predator": 44
+      },
+      {
+        "Tiempo": 116,
+        "Prey": 422,
+        "Predator": 54
+      },
+      {
+        "Tiempo": 117,
+        "Prey": 427,
+        "Predator": 59
+      },
+      {
+        "Tiempo": 118,
+        "Prey": 420,
+        "Predator": 68
+      },
+      {
+        "Tiempo": 119,
+        "Prey": 415,
+        "Predator": 71
+      },
+      {
+        "Tiempo": 120,
+        "Prey": 428,
+        "Predator": 82
+      },
+      {
+        "Tiempo": 121,
+        "Prey": 420,
+        "Predator": 93
+      },
+      {
+        "Tiempo": 122,
+        "Prey": 405,
+        "Predator": 108
+      },
+      {
+        "Tiempo": 123,
+        "Prey": 387,
+        "Predator": 126
+      },
+      {
+        "Tiempo": 124,
+        "Prey": 356,
+        "Predator": 143
+      },
+      {
+        "Tiempo": 125,
+        "Prey": 331,
+        "Predator": 159
+      },
+      {
+        "Tiempo": 126,
+        "Prey": 291,
+        "Predator": 173
+      },
+      {
+        "Tiempo": 127,
+        "Prey": 249,
+        "Predator": 184
+      },
+      {
+        "Tiempo": 128,
+        "Prey": 214,
+        "Predator": 186
+      },
+      {
+        "Tiempo": 129,
+        "Prey": 177,
+        "Predator": 198
+      },
+      {
+        "Tiempo": 130,
+        "Prey": 143,
+        "Predator": 202
+      },
+      {
+        "Tiempo": 131,
+        "Prey": 104,
+        "Predator": 210
+      },
+      {
+        "Tiempo": 132,
+        "Prey": 74,
+        "Predator": 207
+      },
+      {
+        "Tiempo": 133,
+        "Prey": 50,
+        "Predator": 199
+      },
+      {
+        "Tiempo": 134,
+        "Prey": 34,
+        "Predator": 190
+      },
+      {
+        "Tiempo": 135,
+        "Prey": 25,
+        "Predator": 173
+      },
+      {
+        "Tiempo": 136,
+        "Prey": 24,
+        "Predator": 162
+      },
+      {
+        "Tiempo": 137,
+        "Prey": 24,
+        "Predator": 153
+      },
+      {
+        "Tiempo": 138,
+        "Prey": 22,
+        "Predator": 134
+      },
+      {
+        "Tiempo": 139,
+        "Prey": 22,
+        "Predator": 129
+      },
+      {
+        "Tiempo": 140,
+        "Prey": 19,
+        "Predator": 120
+      },
+      {
+        "Tiempo": 141,
+        "Prey": 15,
+        "Predator": 114
+      },
+      {
+        "Tiempo": 142,
+        "Prey": 12,
+        "Predator": 104
+      },
+      {
+        "Tiempo": 143,
+        "Prey": 11,
+        "Predator": 93
+      },
+      {
+        "Tiempo": 144,
+        "Prey": 9,
+        "Predator": 91
+      },
+      {
+        "Tiempo": 145,
+        "Prey": 6,
+        "Predator": 84
+      },
+      {
+        "Tiempo": 146,
+        "Prey": 6,
+        "Predator": 76
+      },
+      {
+        "Tiempo": 147,
+        "Prey": 8,
+        "Predator": 69
+      },
+      {
+        "Tiempo": 148,
+        "Prey": 8,
+        "Predator": 64
+      },
+      {
+        "Tiempo": 149,
+        "Prey": 8,
+        "Predator": 58
+      },
+      {
+        "Tiempo": 150,
+        "Prey": 7,
+        "Predator": 52
+      },
+      {
+        "Tiempo": 151,
+        "Prey": 5,
+        "Predator": 50
+      },
+      {
+        "Tiempo": 152,
+        "Prey": 4,
+        "Predator": 43
+      },
+      {
+        "Tiempo": 153,
+        "Prey": 5,
+        "Predator": 38
+      },
+      {
+        "Tiempo": 154,
+        "Prey": 6,
+        "Predator": 34
+      },
+      {
+        "Tiempo": 155,
+        "Prey": 5,
+        "Predator": 31
+      },
+      {
+        "Tiempo": 156,
+        "Prey": 5,
+        "Predator": 29
+      },
+      {
+        "Tiempo": 157,
+        "Prey": 6,
+        "Predator": 29
+      },
+      {
+        "Tiempo": 158,
+        "Prey": 5,
+        "Predator": 28
+      },
+      {
+        "Tiempo": 159,
+        "Prey": 5,
+        "Predator": 24
+      },
+      {
+        "Tiempo": 160,
+        "Prey": 5,
+        "Predator": 21
+      },
+      {
+        "Tiempo": 161,
+        "Prey": 6,
+        "Predator": 18
+      },
+      {
+        "Tiempo": 162,
+        "Prey": 6,
+        "Predator": 12
+      },
+      {
+        "Tiempo": 163,
+        "Prey": 6,
+        "Predator": 10
+      },
+      {
+        "Tiempo": 164,
+        "Prey": 6,
+        "Predator": 10
+      },
+      {
+        "Tiempo": 165,
+        "Prey": 7,
+        "Predator": 10
+      },
+      {
+        "Tiempo": 166,
+        "Prey": 9,
+        "Predator": 9
+      },
+      {
+        "Tiempo": 167,
+        "Prey": 10,
+        "Predator": 9
+      },
+      {
+        "Tiempo": 168,
+        "Prey": 12,
+        "Predator": 8
+      },
+      {
+        "Tiempo": 169,
+        "Prey": 12,
+        "Predator": 8
+      },
+      {
+        "Tiempo": 170,
+        "Prey": 13,
+        "Predator": 6
+      },
+      {
+        "Tiempo": 171,
+        "Prey": 15,
+        "Predator": 5
+      },
+      {
+        "Tiempo": 172,
+        "Prey": 16,
+        "Predator": 5
+      },
+      {
+        "Tiempo": 173,
+        "Prey": 16,
+        "Predator": 5
+      },
+      {
+        "Tiempo": 174,
+        "Prey": 16,
+        "Predator": 5
+      },
+      {
+        "Tiempo": 175,
+        "Prey": 17,
+        "Predator": 5
+      },
+      {
+        "Tiempo": 176,
+        "Prey": 19,
+        "Predator": 5
+      },
+      {
+        "Tiempo": 177,
+        "Prey": 21,
+        "Predator": 5
+      },
+      {
+        "Tiempo": 178,
+        "Prey": 21,
+        "Predator": 5
+      },
+      {
+        "Tiempo": 179,
+        "Prey": 21,
+        "Predator": 2
+      },
+      {
+        "Tiempo": 180,
+        "Prey": 25,
+        "Predator": 2
+      },
+      {
+        "Tiempo": 181,
+        "Prey": 26,
+        "Predator": 2
+      },
+      {
+        "Tiempo": 182,
+        "Prey": 30,
+        "Predator": 2
+      },
+      {
+        "Tiempo": 183,
+        "Prey": 34,
+        "Predator": 1
+      },
+      {
+        "Tiempo": 184,
+        "Prey": 37,
+        "Predator": 1
+      },
+      {
+        "Tiempo": 185,
+        "Prey": 44,
+        "Predator": 1
+      },
+      {
+        "Tiempo": 186,
+        "Prey": 49,
+        "Predator": 1
+      },
+      {
+        "Tiempo": 187,
+        "Prey": 56,
+        "Predator": 1
+      },
+      {
+        "Tiempo": 188,
+        "Prey": 58,
+        "Predator": 1
+      },
+      {
+        "Tiempo": 189,
+        "Prey": 60,
+        "Predator": 2
+      },
+      {
+        "Tiempo": 190,
+        "Prey": 68,
+        "Predator": 2
+      },
+      {
+        "Tiempo": 191,
+        "Prey": 73,
+        "Predator": 3
+      },
+      {
+        "Tiempo": 192,
+        "Prey": 81,
+        "Predator": 3
+      },
+      {
+        "Tiempo": 193,
+        "Prey": 84,
+        "Predator": 4
+      },
+      {
+        "Tiempo": 194,
+        "Prey": 90,
+        "Predator": 3
+      },
+      {
+        "Tiempo": 195,
+        "Prey": 97,
+        "Predator": 3
+      },
+      {
+        "Tiempo": 196,
+        "Prey": 107,
+        "Predator": 3
+      },
+      {
+        "Tiempo": 197,
+        "Prey": 117,
+        "Predator": 3
+      },
+      {
+        "Tiempo": 198,
+        "Prey": 123,
+        "Predator": 3
+      },
+      {
+        "Tiempo": 199,
+        "Prey": 126,
+        "Predator": 3
+      }
+    ],
+    "data-880ad5bcfe64ca5a2b3f6412585c4d9a": [
+      {
+        "Tiempo": 199,
+        "Prey": 126,
+        "Predator": 3
+      }
+    ],
+    "data-b6cdf879b884e02d70ce2917a229e75a": [
+      {
+        "Tiempo": 0,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 80
+      },
+      {
+        "Tiempo": 1,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 83
+      },
+      {
+        "Tiempo": 2,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 92
+      },
+      {
+        "Tiempo": 3,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 99
+      },
+      {
+        "Tiempo": 4,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 104
+      },
+      {
+        "Tiempo": 5,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 108
+      },
+      {
+        "Tiempo": 6,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 116
+      },
+      {
+        "Tiempo": 7,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 125
+      },
+      {
+        "Tiempo": 8,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 129
+      },
+      {
+        "Tiempo": 9,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 136
+      },
+      {
+        "Tiempo": 10,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 143
+      },
+      {
+        "Tiempo": 11,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 148
+      },
+      {
+        "Tiempo": 12,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 151
+      },
+      {
+        "Tiempo": 13,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 160
+      },
+      {
+        "Tiempo": 14,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 165
+      },
+      {
+        "Tiempo": 15,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 176
+      },
+      {
+        "Tiempo": 16,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 178
+      },
+      {
+        "Tiempo": 17,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 184
+      },
+      {
+        "Tiempo": 18,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 192
+      },
+      {
+        "Tiempo": 19,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 196
+      },
+      {
+        "Tiempo": 20,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 203
+      },
+      {
+        "Tiempo": 21,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 206
+      },
+      {
+        "Tiempo": 22,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 214
+      },
+      {
+        "Tiempo": 23,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 218
+      },
+      {
+        "Tiempo": 24,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 228
+      },
+      {
+        "Tiempo": 25,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 241
+      },
+      {
+        "Tiempo": 26,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 249
+      },
+      {
+        "Tiempo": 27,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 256
+      },
+      {
+        "Tiempo": 28,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 263
+      },
+      {
+        "Tiempo": 29,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 282
+      },
+      {
+        "Tiempo": 30,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 294
+      },
+      {
+        "Tiempo": 31,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 297
+      },
+      {
+        "Tiempo": 32,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 290
+      },
+      {
+        "Tiempo": 33,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 289
+      },
+      {
+        "Tiempo": 34,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 278
+      },
+      {
+        "Tiempo": 35,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 272
+      },
+      {
+        "Tiempo": 36,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 272
+      },
+      {
+        "Tiempo": 37,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 265
+      },
+      {
+        "Tiempo": 38,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 259
+      },
+      {
+        "Tiempo": 39,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 245
+      },
+      {
+        "Tiempo": 40,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 223
+      },
+      {
+        "Tiempo": 41,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 189
+      },
+      {
+        "Tiempo": 42,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 164
+      },
+      {
+        "Tiempo": 43,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 138
+      },
+      {
+        "Tiempo": 44,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 123
+      },
+      {
+        "Tiempo": 45,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 105
+      },
+      {
+        "Tiempo": 46,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 91
+      },
+      {
+        "Tiempo": 47,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 90
+      },
+      {
+        "Tiempo": 48,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 77
+      },
+      {
+        "Tiempo": 49,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 67
+      },
+      {
+        "Tiempo": 50,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 58
+      },
+      {
+        "Tiempo": 51,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 53
+      },
+      {
+        "Tiempo": 52,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 53
+      },
+      {
+        "Tiempo": 53,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 47
+      },
+      {
+        "Tiempo": 54,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 42
+      },
+      {
+        "Tiempo": 55,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 42
+      },
+      {
+        "Tiempo": 56,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 43
+      },
+      {
+        "Tiempo": 57,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 38
+      },
+      {
+        "Tiempo": 58,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 36
+      },
+      {
+        "Tiempo": 59,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 38
+      },
+      {
+        "Tiempo": 60,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 35
+      },
+      {
+        "Tiempo": 61,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 35
+      },
+      {
+        "Tiempo": 62,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 32
+      },
+      {
+        "Tiempo": 63,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 37
+      },
+      {
+        "Tiempo": 64,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 36
+      },
+      {
+        "Tiempo": 65,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 39
+      },
+      {
+        "Tiempo": 66,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 37
+      },
+      {
+        "Tiempo": 67,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 34
+      },
+      {
+        "Tiempo": 68,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 31
+      },
+      {
+        "Tiempo": 69,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 30
+      },
+      {
+        "Tiempo": 70,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 29
+      },
+      {
+        "Tiempo": 71,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 31
+      },
+      {
+        "Tiempo": 72,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 34
+      },
+      {
+        "Tiempo": 73,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 38
+      },
+      {
+        "Tiempo": 74,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 42
+      },
+      {
+        "Tiempo": 75,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 43
+      },
+      {
+        "Tiempo": 76,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 48
+      },
+      {
+        "Tiempo": 77,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 48
+      },
+      {
+        "Tiempo": 78,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 52
+      },
+      {
+        "Tiempo": 79,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 52
+      },
+      {
+        "Tiempo": 80,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 50
+      },
+      {
+        "Tiempo": 81,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 52
+      },
+      {
+        "Tiempo": 82,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 57
+      },
+      {
+        "Tiempo": 83,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 60
+      },
+      {
+        "Tiempo": 84,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 65
+      },
+      {
+        "Tiempo": 85,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 65
+      },
+      {
+        "Tiempo": 86,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 72
+      },
+      {
+        "Tiempo": 87,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 75
+      },
+      {
+        "Tiempo": 88,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 74
+      },
+      {
+        "Tiempo": 89,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 80
+      },
+      {
+        "Tiempo": 90,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 83
+      },
+      {
+        "Tiempo": 91,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 85
+      },
+      {
+        "Tiempo": 92,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 88
+      },
+      {
+        "Tiempo": 93,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 94
+      },
+      {
+        "Tiempo": 94,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 103
+      },
+      {
+        "Tiempo": 95,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 112
+      },
+      {
+        "Tiempo": 96,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 129
+      },
+      {
+        "Tiempo": 97,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 137
+      },
+      {
+        "Tiempo": 98,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 146
+      },
+      {
+        "Tiempo": 99,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 157
+      },
+      {
+        "Tiempo": 100,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 170
+      },
+      {
+        "Tiempo": 101,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 179
+      },
+      {
+        "Tiempo": 102,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 200
+      },
+      {
+        "Tiempo": 103,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 208
+      },
+      {
+        "Tiempo": 104,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 222
+      },
+      {
+        "Tiempo": 105,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 240
+      },
+      {
+        "Tiempo": 106,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 250
+      },
+      {
+        "Tiempo": 107,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 265
+      },
+      {
+        "Tiempo": 108,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 282
+      },
+      {
+        "Tiempo": 109,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 297
+      },
+      {
+        "Tiempo": 110,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 314
+      },
+      {
+        "Tiempo": 111,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 327
+      },
+      {
+        "Tiempo": 112,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 338
+      },
+      {
+        "Tiempo": 113,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 357
+      },
+      {
+        "Tiempo": 114,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 383
+      },
+      {
+        "Tiempo": 115,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 408
+      },
+      {
+        "Tiempo": 116,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 422
+      },
+      {
+        "Tiempo": 117,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 427
+      },
+      {
+        "Tiempo": 118,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 420
+      },
+      {
+        "Tiempo": 119,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 415
+      },
+      {
+        "Tiempo": 120,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 428
+      },
+      {
+        "Tiempo": 121,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 420
+      },
+      {
+        "Tiempo": 122,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 405
+      },
+      {
+        "Tiempo": 123,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 387
+      },
+      {
+        "Tiempo": 124,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 356
+      },
+      {
+        "Tiempo": 125,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 331
+      },
+      {
+        "Tiempo": 126,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 291
+      },
+      {
+        "Tiempo": 127,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 249
+      },
+      {
+        "Tiempo": 128,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 214
+      },
+      {
+        "Tiempo": 129,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 177
+      },
+      {
+        "Tiempo": 130,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 143
+      },
+      {
+        "Tiempo": 131,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 104
+      },
+      {
+        "Tiempo": 132,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 74
+      },
+      {
+        "Tiempo": 133,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 50
+      },
+      {
+        "Tiempo": 134,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 34
+      },
+      {
+        "Tiempo": 135,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 25
+      },
+      {
+        "Tiempo": 136,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 24
+      },
+      {
+        "Tiempo": 137,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 24
+      },
+      {
+        "Tiempo": 138,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 22
+      },
+      {
+        "Tiempo": 139,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 22
+      },
+      {
+        "Tiempo": 140,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 19
+      },
+      {
+        "Tiempo": 141,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 15
+      },
+      {
+        "Tiempo": 142,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 12
+      },
+      {
+        "Tiempo": 143,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 11
+      },
+      {
+        "Tiempo": 144,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 9
+      },
+      {
+        "Tiempo": 145,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 6
+      },
+      {
+        "Tiempo": 146,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 6
+      },
+      {
+        "Tiempo": 147,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 8
+      },
+      {
+        "Tiempo": 148,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 8
+      },
+      {
+        "Tiempo": 149,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 8
+      },
+      {
+        "Tiempo": 150,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 7
+      },
+      {
+        "Tiempo": 151,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 5
+      },
+      {
+        "Tiempo": 152,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 4
+      },
+      {
+        "Tiempo": 153,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 5
+      },
+      {
+        "Tiempo": 154,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 6
+      },
+      {
+        "Tiempo": 155,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 5
+      },
+      {
+        "Tiempo": 156,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 5
+      },
+      {
+        "Tiempo": 157,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 6
+      },
+      {
+        "Tiempo": 158,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 5
+      },
+      {
+        "Tiempo": 159,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 5
+      },
+      {
+        "Tiempo": 160,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 5
+      },
+      {
+        "Tiempo": 161,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 6
+      },
+      {
+        "Tiempo": 162,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 6
+      },
+      {
+        "Tiempo": 163,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 6
+      },
+      {
+        "Tiempo": 164,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 6
+      },
+      {
+        "Tiempo": 165,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 7
+      },
+      {
+        "Tiempo": 166,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 9
+      },
+      {
+        "Tiempo": 167,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 10
+      },
+      {
+        "Tiempo": 168,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 12
+      },
+      {
+        "Tiempo": 169,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 12
+      },
+      {
+        "Tiempo": 170,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 13
+      },
+      {
+        "Tiempo": 171,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 15
+      },
+      {
+        "Tiempo": 172,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 16
+      },
+      {
+        "Tiempo": 173,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 16
+      },
+      {
+        "Tiempo": 174,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 16
+      },
+      {
+        "Tiempo": 175,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 17
+      },
+      {
+        "Tiempo": 176,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 19
+      },
+      {
+        "Tiempo": 177,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 21
+      },
+      {
+        "Tiempo": 178,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 21
+      },
+      {
+        "Tiempo": 179,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 21
+      },
+      {
+        "Tiempo": 180,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 25
+      },
+      {
+        "Tiempo": 181,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 26
+      },
+      {
+        "Tiempo": 182,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 30
+      },
+      {
+        "Tiempo": 183,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 34
+      },
+      {
+        "Tiempo": 184,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 37
+      },
+      {
+        "Tiempo": 185,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 44
+      },
+      {
+        "Tiempo": 186,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 49
+      },
+      {
+        "Tiempo": 187,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 56
+      },
+      {
+        "Tiempo": 188,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 58
+      },
+      {
+        "Tiempo": 189,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 60
+      },
+      {
+        "Tiempo": 190,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 68
+      },
+      {
+        "Tiempo": 191,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 73
+      },
+      {
+        "Tiempo": 192,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 81
+      },
+      {
+        "Tiempo": 193,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 84
+      },
+      {
+        "Tiempo": 194,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 90
+      },
+      {
+        "Tiempo": 195,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 97
+      },
+      {
+        "Tiempo": 196,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 107
+      },
+      {
+        "Tiempo": 197,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 117
+      },
+      {
+        "Tiempo": 198,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 123
+      },
+      {
+        "Tiempo": 199,
+        "Especie": "Prey",
+        "Poblaci\u00f3n": 126
+      },
+      {
+        "Tiempo": 0,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 10
+      },
+      {
+        "Tiempo": 1,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 10
+      },
+      {
+        "Tiempo": 2,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 9
+      },
+      {
+        "Tiempo": 3,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 9
+      },
+      {
+        "Tiempo": 4,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 10
+      },
+      {
+        "Tiempo": 5,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 12
+      },
+      {
+        "Tiempo": 6,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 10
+      },
+      {
+        "Tiempo": 7,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 11
+      },
+      {
+        "Tiempo": 8,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 11
+      },
+      {
+        "Tiempo": 9,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 12
+      },
+      {
+        "Tiempo": 10,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 14
+      },
+      {
+        "Tiempo": 11,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 15
+      },
+      {
+        "Tiempo": 12,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 16
+      },
+      {
+        "Tiempo": 13,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 17
+      },
+      {
+        "Tiempo": 14,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 21
+      },
+      {
+        "Tiempo": 15,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 23
+      },
+      {
+        "Tiempo": 16,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 26
+      },
+      {
+        "Tiempo": 17,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 29
+      },
+      {
+        "Tiempo": 18,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 29
+      },
+      {
+        "Tiempo": 19,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 34
+      },
+      {
+        "Tiempo": 20,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 32
+      },
+      {
+        "Tiempo": 21,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 33
+      },
+      {
+        "Tiempo": 22,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 33
+      },
+      {
+        "Tiempo": 23,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 32
+      },
+      {
+        "Tiempo": 24,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 36
+      },
+      {
+        "Tiempo": 25,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 35
+      },
+      {
+        "Tiempo": 26,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 33
+      },
+      {
+        "Tiempo": 27,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 34
+      },
+      {
+        "Tiempo": 28,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 35
+      },
+      {
+        "Tiempo": 29,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 35
+      },
+      {
+        "Tiempo": 30,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 43
+      },
+      {
+        "Tiempo": 31,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 48
+      },
+      {
+        "Tiempo": 32,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 56
+      },
+      {
+        "Tiempo": 33,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 64
+      },
+      {
+        "Tiempo": 34,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 63
+      },
+      {
+        "Tiempo": 35,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 67
+      },
+      {
+        "Tiempo": 36,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 71
+      },
+      {
+        "Tiempo": 37,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 83
+      },
+      {
+        "Tiempo": 38,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 93
+      },
+      {
+        "Tiempo": 39,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 101
+      },
+      {
+        "Tiempo": 40,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 112
+      },
+      {
+        "Tiempo": 41,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 119
+      },
+      {
+        "Tiempo": 42,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 124
+      },
+      {
+        "Tiempo": 43,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 126
+      },
+      {
+        "Tiempo": 44,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 134
+      },
+      {
+        "Tiempo": 45,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 138
+      },
+      {
+        "Tiempo": 46,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 133
+      },
+      {
+        "Tiempo": 47,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 124
+      },
+      {
+        "Tiempo": 48,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 123
+      },
+      {
+        "Tiempo": 49,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 124
+      },
+      {
+        "Tiempo": 50,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 120
+      },
+      {
+        "Tiempo": 51,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 109
+      },
+      {
+        "Tiempo": 52,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 101
+      },
+      {
+        "Tiempo": 53,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 95
+      },
+      {
+        "Tiempo": 54,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 91
+      },
+      {
+        "Tiempo": 55,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 88
+      },
+      {
+        "Tiempo": 56,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 84
+      },
+      {
+        "Tiempo": 57,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 80
+      },
+      {
+        "Tiempo": 58,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 75
+      },
+      {
+        "Tiempo": 59,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 72
+      },
+      {
+        "Tiempo": 60,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 65
+      },
+      {
+        "Tiempo": 61,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 61
+      },
+      {
+        "Tiempo": 62,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 59
+      },
+      {
+        "Tiempo": 63,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 51
+      },
+      {
+        "Tiempo": 64,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 48
+      },
+      {
+        "Tiempo": 65,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 42
+      },
+      {
+        "Tiempo": 66,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 37
+      },
+      {
+        "Tiempo": 67,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 32
+      },
+      {
+        "Tiempo": 68,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 32
+      },
+      {
+        "Tiempo": 69,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 29
+      },
+      {
+        "Tiempo": 70,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 24
+      },
+      {
+        "Tiempo": 71,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 22
+      },
+      {
+        "Tiempo": 72,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 22
+      },
+      {
+        "Tiempo": 73,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 20
+      },
+      {
+        "Tiempo": 74,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 18
+      },
+      {
+        "Tiempo": 75,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 17
+      },
+      {
+        "Tiempo": 76,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 14
+      },
+      {
+        "Tiempo": 77,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 15
+      },
+      {
+        "Tiempo": 78,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 15
+      },
+      {
+        "Tiempo": 79,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 15
+      },
+      {
+        "Tiempo": 80,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 15
+      },
+      {
+        "Tiempo": 81,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 14
+      },
+      {
+        "Tiempo": 82,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 14
+      },
+      {
+        "Tiempo": 83,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 13
+      },
+      {
+        "Tiempo": 84,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 13
+      },
+      {
+        "Tiempo": 85,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 13
+      },
+      {
+        "Tiempo": 86,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 12
+      },
+      {
+        "Tiempo": 87,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 13
+      },
+      {
+        "Tiempo": 88,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 14
+      },
+      {
+        "Tiempo": 89,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 15
+      },
+      {
+        "Tiempo": 90,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 14
+      },
+      {
+        "Tiempo": 91,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 12
+      },
+      {
+        "Tiempo": 92,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 11
+      },
+      {
+        "Tiempo": 93,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 11
+      },
+      {
+        "Tiempo": 94,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 9
+      },
+      {
+        "Tiempo": 95,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 8
+      },
+      {
+        "Tiempo": 96,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 8
+      },
+      {
+        "Tiempo": 97,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 8
+      },
+      {
+        "Tiempo": 98,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 6
+      },
+      {
+        "Tiempo": 99,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 8
+      },
+      {
+        "Tiempo": 100,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 8
+      },
+      {
+        "Tiempo": 101,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 7
+      },
+      {
+        "Tiempo": 102,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 8
+      },
+      {
+        "Tiempo": 103,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 8
+      },
+      {
+        "Tiempo": 104,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 9
+      },
+      {
+        "Tiempo": 105,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 11
+      },
+      {
+        "Tiempo": 106,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 12
+      },
+      {
+        "Tiempo": 107,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 13
+      },
+      {
+        "Tiempo": 108,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 15
+      },
+      {
+        "Tiempo": 109,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 18
+      },
+      {
+        "Tiempo": 110,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 20
+      },
+      {
+        "Tiempo": 111,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 26
+      },
+      {
+        "Tiempo": 112,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 32
+      },
+      {
+        "Tiempo": 113,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 35
+      },
+      {
+        "Tiempo": 114,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 42
+      },
+      {
+        "Tiempo": 115,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 44
+      },
+      {
+        "Tiempo": 116,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 54
+      },
+      {
+        "Tiempo": 117,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 59
+      },
+      {
+        "Tiempo": 118,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 68
+      },
+      {
+        "Tiempo": 119,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 71
+      },
+      {
+        "Tiempo": 120,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 82
+      },
+      {
+        "Tiempo": 121,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 93
+      },
+      {
+        "Tiempo": 122,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 108
+      },
+      {
+        "Tiempo": 123,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 126
+      },
+      {
+        "Tiempo": 124,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 143
+      },
+      {
+        "Tiempo": 125,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 159
+      },
+      {
+        "Tiempo": 126,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 173
+      },
+      {
+        "Tiempo": 127,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 184
+      },
+      {
+        "Tiempo": 128,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 186
+      },
+      {
+        "Tiempo": 129,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 198
+      },
+      {
+        "Tiempo": 130,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 202
+      },
+      {
+        "Tiempo": 131,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 210
+      },
+      {
+        "Tiempo": 132,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 207
+      },
+      {
+        "Tiempo": 133,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 199
+      },
+      {
+        "Tiempo": 134,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 190
+      },
+      {
+        "Tiempo": 135,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 173
+      },
+      {
+        "Tiempo": 136,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 162
+      },
+      {
+        "Tiempo": 137,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 153
+      },
+      {
+        "Tiempo": 138,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 134
+      },
+      {
+        "Tiempo": 139,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 129
+      },
+      {
+        "Tiempo": 140,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 120
+      },
+      {
+        "Tiempo": 141,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 114
+      },
+      {
+        "Tiempo": 142,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 104
+      },
+      {
+        "Tiempo": 143,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 93
+      },
+      {
+        "Tiempo": 144,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 91
+      },
+      {
+        "Tiempo": 145,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 84
+      },
+      {
+        "Tiempo": 146,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 76
+      },
+      {
+        "Tiempo": 147,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 69
+      },
+      {
+        "Tiempo": 148,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 64
+      },
+      {
+        "Tiempo": 149,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 58
+      },
+      {
+        "Tiempo": 150,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 52
+      },
+      {
+        "Tiempo": 151,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 50
+      },
+      {
+        "Tiempo": 152,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 43
+      },
+      {
+        "Tiempo": 153,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 38
+      },
+      {
+        "Tiempo": 154,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 34
+      },
+      {
+        "Tiempo": 155,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 31
+      },
+      {
+        "Tiempo": 156,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 29
+      },
+      {
+        "Tiempo": 157,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 29
+      },
+      {
+        "Tiempo": 158,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 28
+      },
+      {
+        "Tiempo": 159,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 24
+      },
+      {
+        "Tiempo": 160,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 21
+      },
+      {
+        "Tiempo": 161,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 18
+      },
+      {
+        "Tiempo": 162,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 12
+      },
+      {
+        "Tiempo": 163,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 10
+      },
+      {
+        "Tiempo": 164,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 10
+      },
+      {
+        "Tiempo": 165,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 10
+      },
+      {
+        "Tiempo": 166,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 9
+      },
+      {
+        "Tiempo": 167,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 9
+      },
+      {
+        "Tiempo": 168,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 8
+      },
+      {
+        "Tiempo": 169,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 8
+      },
+      {
+        "Tiempo": 170,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 6
+      },
+      {
+        "Tiempo": 171,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 5
+      },
+      {
+        "Tiempo": 172,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 5
+      },
+      {
+        "Tiempo": 173,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 5
+      },
+      {
+        "Tiempo": 174,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 5
+      },
+      {
+        "Tiempo": 175,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 5
+      },
+      {
+        "Tiempo": 176,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 5
+      },
+      {
+        "Tiempo": 177,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 5
+      },
+      {
+        "Tiempo": 178,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 5
+      },
+      {
+        "Tiempo": 179,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 2
+      },
+      {
+        "Tiempo": 180,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 2
+      },
+      {
+        "Tiempo": 181,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 2
+      },
+      {
+        "Tiempo": 182,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 2
+      },
+      {
+        "Tiempo": 183,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 1
+      },
+      {
+        "Tiempo": 184,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 1
+      },
+      {
+        "Tiempo": 185,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 1
+      },
+      {
+        "Tiempo": 186,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 1
+      },
+      {
+        "Tiempo": 187,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 1
+      },
+      {
+        "Tiempo": 188,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 1
+      },
+      {
+        "Tiempo": 189,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 2
+      },
+      {
+        "Tiempo": 190,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 2
+      },
+      {
+        "Tiempo": 191,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 3
+      },
+      {
+        "Tiempo": 192,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 3
+      },
+      {
+        "Tiempo": 193,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 4
+      },
+      {
+        "Tiempo": 194,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 3
+      },
+      {
+        "Tiempo": 195,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 3
+      },
+      {
+        "Tiempo": 196,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 3
+      },
+      {
+        "Tiempo": 197,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 3
+      },
+      {
+        "Tiempo": 198,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 3
+      },
+      {
+        "Tiempo": 199,
+        "Especie": "Predator",
+        "Poblaci\u00f3n": 3
+      }
+    ]
+  }
+}

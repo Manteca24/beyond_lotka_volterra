@@ -1,0 +1,1281 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    }
+  },
+  "hconcat": [
+    {
+      "data": {
+        "name": "data-84e6ab280a4fec96e3407f5f1e32e7b4"
+      },
+      "mark": {
+        "type": "square",
+        "opacity": 1,
+        "size": 130
+      },
+      "encoding": {
+        "color": {
+          "field": "Tipo",
+          "scale": {
+            "domain": [
+              "Presa",
+              "Depredador",
+              "Refugio (Bosque)"
+            ],
+            "range": [
+              "blue",
+              "red",
+              "#2ca02c"
+            ]
+          },
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "x",
+            "type": "quantitative"
+          },
+          {
+            "field": "y",
+            "type": "quantitative"
+          },
+          {
+            "field": "Tipo",
+            "type": "nominal"
+          }
+        ],
+        "x": {
+          "axis": {
+            "labels": false,
+            "ticks": false,
+            "title": null
+          },
+          "field": "x",
+          "type": "ordinal"
+        },
+        "y": {
+          "axis": {
+            "labels": false,
+            "ticks": false,
+            "title": null
+          },
+          "field": "y",
+          "sort": "descending",
+          "type": "ordinal"
+        }
+      },
+      "height": 250,
+      "title": "H\u00e1bitat Cr\u00edtico (8x8)",
+      "width": 250
+    },
+    {
+      "data": {
+        "name": "data-193f0118548114a03c21f36e4348c3d1"
+      },
+      "mark": {
+        "type": "square",
+        "opacity": 1,
+        "size": 130
+      },
+      "encoding": {
+        "color": {
+          "field": "Tipo",
+          "scale": {
+            "domain": [
+              "Presa",
+              "Depredador",
+              "Refugio (Bosque)"
+            ],
+            "range": [
+              "blue",
+              "red",
+              "#2ca02c"
+            ]
+          },
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "x",
+            "type": "quantitative"
+          },
+          {
+            "field": "y",
+            "type": "quantitative"
+          },
+          {
+            "field": "Tipo",
+            "type": "nominal"
+          }
+        ],
+        "x": {
+          "axis": {
+            "labels": false,
+            "ticks": false,
+            "title": null
+          },
+          "field": "x",
+          "type": "ordinal"
+        },
+        "y": {
+          "axis": {
+            "labels": false,
+            "ticks": false,
+            "title": null
+          },
+          "field": "y",
+          "sort": "descending",
+          "type": "ordinal"
+        }
+      },
+      "height": 250,
+      "title": "H\u00e1bitat Seguro (20x20)",
+      "width": 250
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "color": "shared"
+    }
+  },
+  "title": "Impacto Visual de la Reducci\u00f3n de H\u00e1bitat",
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "datasets": {
+    "data-84e6ab280a4fec96e3407f5f1e32e7b4": [
+      {
+        "x": 0,
+        "y": 0,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "Tipo": "Depredador"
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "Tipo": "Depredador"
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "Tipo": "Depredador"
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "Tipo": "Depredador"
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "Tipo": "Depredador"
+      }
+    ],
+    "data-193f0118548114a03c21f36e4348c3d1": [
+      {
+        "x": 0,
+        "y": 0,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 8,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 9,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 10,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 11,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 12,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 13,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 14,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 15,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 16,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 17,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 18,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 0,
+        "y": 19,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 8,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 9,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 10,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 11,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 12,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 13,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 14,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 15,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 16,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 17,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 18,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 1,
+        "y": 19,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 2,
+        "y": 8,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 2,
+        "y": 9,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 2,
+        "y": 10,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 2,
+        "y": 11,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 2,
+        "y": 12,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 2,
+        "y": 13,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 2,
+        "y": 14,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 2,
+        "y": 15,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 2,
+        "y": 16,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 2,
+        "y": 17,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 2,
+        "y": 18,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 2,
+        "y": 19,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 3,
+        "y": 8,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 3,
+        "y": 9,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 3,
+        "y": 10,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 3,
+        "y": 11,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 3,
+        "y": 12,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 3,
+        "y": 13,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 3,
+        "y": 14,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 3,
+        "y": 15,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 3,
+        "y": 16,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 3,
+        "y": 17,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 3,
+        "y": 18,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 3,
+        "y": 19,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 4,
+        "y": 8,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 4,
+        "y": 9,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 4,
+        "y": 10,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 4,
+        "y": 11,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 4,
+        "y": 12,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 4,
+        "y": 13,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 4,
+        "y": 14,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 4,
+        "y": 15,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 4,
+        "y": 16,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 4,
+        "y": 17,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 4,
+        "y": 18,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 4,
+        "y": 19,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 5,
+        "y": 8,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 5,
+        "y": 9,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 5,
+        "y": 10,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 5,
+        "y": 11,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 5,
+        "y": 12,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 5,
+        "y": 13,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 5,
+        "y": 14,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 5,
+        "y": 15,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 5,
+        "y": 16,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 5,
+        "y": 17,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 5,
+        "y": 18,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 5,
+        "y": 19,
+        "Tipo": "Refugio (Bosque)"
+      },
+      {
+        "x": 13,
+        "y": 2,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 6,
+        "y": 10,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 1,
+        "y": 14,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 6,
+        "y": 12,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 15,
+        "y": 19,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 6,
+        "y": 14,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 3,
+        "y": 19,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 13,
+        "y": 0,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 16,
+        "y": 9,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 4,
+        "y": 9,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 19,
+        "y": 15,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 9,
+        "y": 2,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 11,
+        "y": 11,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 8,
+        "y": 4,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 17,
+        "y": 8,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 11,
+        "y": 12,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 0,
+        "y": 19,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 17,
+        "y": 7,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 16,
+        "y": 0,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 4,
+        "y": 15,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 3,
+        "y": 9,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 0,
+        "y": 17,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 4,
+        "y": 12,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 10,
+        "y": 8,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 10,
+        "y": 3,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 5,
+        "y": 17,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 19,
+        "y": 16,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 18,
+        "y": 11,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 9,
+        "y": 0,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 4,
+        "y": 15,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 4,
+        "y": 19,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 5,
+        "y": 12,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 15,
+        "y": 13,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 16,
+        "y": 13,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 13,
+        "y": 18,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 9,
+        "y": 14,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 18,
+        "y": 13,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 14,
+        "y": 6,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 6,
+        "y": 14,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 18,
+        "y": 2,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 9,
+        "y": 2,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 2,
+        "y": 10,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 18,
+        "y": 10,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "Tipo": "Presa"
+      },
+      {
+        "x": 14,
+        "y": 18,
+        "Tipo": "Depredador"
+      },
+      {
+        "x": 11,
+        "y": 17,
+        "Tipo": "Depredador"
+      },
+      {
+        "x": 17,
+        "y": 15,
+        "Tipo": "Depredador"
+      },
+      {
+        "x": 11,
+        "y": 17,
+        "Tipo": "Depredador"
+      },
+      {
+        "x": 7,
+        "y": 15,
+        "Tipo": "Depredador"
+      },
+      {
+        "x": 18,
+        "y": 8,
+        "Tipo": "Depredador"
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "Tipo": "Depredador"
+      },
+      {
+        "x": 14,
+        "y": 13,
+        "Tipo": "Depredador"
+      },
+      {
+        "x": 14,
+        "y": 16,
+        "Tipo": "Depredador"
+      },
+      {
+        "x": 16,
+        "y": 4,
+        "Tipo": "Depredador"
+      },
+      {
+        "x": 14,
+        "y": 17,
+        "Tipo": "Depredador"
+      },
+      {
+        "x": 16,
+        "y": 17,
+        "Tipo": "Depredador"
+      },
+      {
+        "x": 15,
+        "y": 10,
+        "Tipo": "Depredador"
+      },
+      {
+        "x": 8,
+        "y": 15,
+        "Tipo": "Depredador"
+      },
+      {
+        "x": 15,
+        "y": 10,
+        "Tipo": "Depredador"
+      }
+    ]
+  }
+}

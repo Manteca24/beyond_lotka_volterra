@@ -30,16 +30,12 @@ tfg-env/
 
 # ─── Multimedia generada (pesada, se regenera con export_charts.py) ──
 # GIFs de simulación en predator_prey/ (se regeneran con el notebook)
-predator_prey/*.gif
-predator_prey/*.mp4
-predator_prey/*.avi
+/*.gif
+*.mp4
+/*.avi
 
-# OJO: web/assets/simulacion_definitiva.gif SÍ se sube (necesario para la web)
-# Si quieres excluirlo explícitamente: añade una línea  !web/assets/*.gif
 
 # ─── Documentos privados / borradores ────────────────────────────────
-# El PDF de la memoria NO se sube al repo público
-predator_prey/*.pdf
 *.pdf
 
 # ─── Archivos generados que se pueden regenerar ──────────────────────
@@ -51,6 +47,4 @@ predator_prey/*.pdf
 # ─── Otros ───────────────────────────────────────────────────────────
 backups/
 downloads/
-hf_space/
-web/
-visualize.py
+.env

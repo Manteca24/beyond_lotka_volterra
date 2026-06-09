@@ -1,0 +1,200 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    },
+    "axis": {
+      "grid": true,
+      "gridColor": "lightgray",
+      "gridDash": [
+        2,
+        2
+      ]
+    },
+    "title": {
+      "anchor": "start",
+      "color": "gray",
+      "fontSize": 16
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "name": "data-45dbabf9758e7df87a08a4ee0d9d3b64"
+      },
+      "mark": {
+        "type": "rect",
+        "opacity": 0.15
+      },
+      "encoding": {
+        "color": {
+          "field": "Zona",
+          "legend": {
+            "labelLimit": 500,
+            "orient": "bottom-left",
+            "title": "Riesgo de Extinci\u00f3n"
+          },
+          "scale": {
+            "domain": [
+              "1. Trampa Ecol\u00f3gica (100% Extinci\u00f3n)",
+              "2. Umbral Cr\u00edtico (Transici\u00f3n)",
+              "3. Sostenibilidad Emergente"
+            ],
+            "range": [
+              "#d62728",
+              "#ff7f0e",
+              "#2ca02c"
+            ]
+          },
+          "type": "nominal"
+        },
+        "x": {
+          "field": "x1",
+          "type": "quantitative"
+        },
+        "x2": {
+          "field": "x2"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-85b2ffe9c08c81a825d888729025723f"
+      },
+      "mark": {
+        "type": "line",
+        "color": "#1f77b4",
+        "strokeWidth": 2.5
+      },
+      "encoding": {
+        "x": {
+          "field": "Proporcion",
+          "scale": {
+            "domain": [
+              0,
+              50
+            ]
+          },
+          "title": "Porcentaje de \u00c1rea Protegida (%)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Probabilidad",
+          "scale": {
+            "domain": [
+              0,
+              1.05
+            ]
+          },
+          "title": "Probabilidad de Colapso",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-85b2ffe9c08c81a825d888729025723f"
+      },
+      "mark": {
+        "type": "circle",
+        "color": "#1f77b4",
+        "opacity": 1,
+        "size": 65
+      },
+      "encoding": {
+        "x": {
+          "field": "Proporcion",
+          "scale": {
+            "domain": [
+              0,
+              50
+            ]
+          },
+          "title": "Porcentaje de \u00c1rea Protegida (%)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Probabilidad",
+          "scale": {
+            "domain": [
+              0,
+              1.05
+            ]
+          },
+          "title": "Probabilidad de Colapso",
+          "type": "quantitative"
+        }
+      }
+    }
+  ],
+  "height": 350,
+  "title": "Sensibilidad a la Proporci\u00f3n de Refugio Fragmentado",
+  "width": 650,
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "datasets": {
+    "data-45dbabf9758e7df87a08a4ee0d9d3b64": [
+      {
+        "x1": 0,
+        "x2": 30,
+        "Zona": "1. Trampa Ecol\u00f3gica (100% Extinci\u00f3n)"
+      },
+      {
+        "x1": 30,
+        "x2": 40,
+        "Zona": "2. Umbral Cr\u00edtico (Transici\u00f3n)"
+      },
+      {
+        "x1": 40,
+        "x2": 50,
+        "Zona": "3. Sostenibilidad Emergente"
+      }
+    ],
+    "data-85b2ffe9c08c81a825d888729025723f": [
+      {
+        "Proporcion": 0.0,
+        "Probabilidad": 1.0
+      },
+      {
+        "Proporcion": 5.0,
+        "Probabilidad": 1.0
+      },
+      {
+        "Proporcion": 10.0,
+        "Probabilidad": 1.0
+      },
+      {
+        "Proporcion": 15.0,
+        "Probabilidad": 1.0
+      },
+      {
+        "Proporcion": 20.0,
+        "Probabilidad": 1.0
+      },
+      {
+        "Proporcion": 25.0,
+        "Probabilidad": 0.98
+      },
+      {
+        "Proporcion": 30.0,
+        "Probabilidad": 1.0
+      },
+      {
+        "Proporcion": 35.0,
+        "Probabilidad": 0.98
+      },
+      {
+        "Proporcion": 40.0,
+        "Probabilidad": 0.88
+      },
+      {
+        "Proporcion": 45.0,
+        "Probabilidad": 0.8
+      },
+      {
+        "Proporcion": 50.0,
+        "Probabilidad": 0.58
+      }
+    ]
+  }
+}

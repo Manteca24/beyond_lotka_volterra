@@ -1,0 +1,184 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    },
+    "axis": {
+      "grid": true,
+      "gridColor": "lightgray",
+      "gridDash": [
+        2,
+        2
+      ]
+    },
+    "title": {
+      "anchor": "start",
+      "color": "gray",
+      "fontSize": 16
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "name": "data-28c52f368440b9dc94f1fddce9eb2553"
+      },
+      "mark": {
+        "type": "rect",
+        "opacity": 0.15
+      },
+      "encoding": {
+        "color": {
+          "field": "Zona",
+          "legend": {
+            "labelLimit": 500,
+            "orient": "bottom-left",
+            "title": "Riesgo de Extinci\u00f3n"
+          },
+          "scale": {
+            "domain": [
+              "1. Trampa Ecol\u00f3gica",
+              "2. Umbral Cr\u00edtico (Transici\u00f3n)",
+              "3. Sostenibilidad Emergente"
+            ],
+            "range": [
+              "#d62728",
+              "#ff7f0e",
+              "#2ca02c"
+            ]
+          },
+          "type": "nominal"
+        },
+        "x": {
+          "field": "x1",
+          "type": "quantitative"
+        },
+        "x2": {
+          "field": "x2"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-2996534461e42461f39e9c2bf368fefc"
+      },
+      "mark": {
+        "type": "line",
+        "color": "#1f77b4",
+        "strokeWidth": 2.5
+      },
+      "encoding": {
+        "x": {
+          "field": "Proporcion",
+          "scale": {
+            "domain": [
+              0,
+              30
+            ]
+          },
+          "title": "Porcentaje de \u00c1rea Protegida (%)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Probabilidad",
+          "scale": {
+            "domain": [
+              0,
+              1.05
+            ]
+          },
+          "title": "Probabilidad de Colapso",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-2996534461e42461f39e9c2bf368fefc"
+      },
+      "mark": {
+        "type": "circle",
+        "color": "#1f77b4",
+        "opacity": 1,
+        "size": 65
+      },
+      "encoding": {
+        "x": {
+          "field": "Proporcion",
+          "scale": {
+            "domain": [
+              0,
+              30
+            ]
+          },
+          "title": "Porcentaje de \u00c1rea Protegida (%)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Probabilidad",
+          "scale": {
+            "domain": [
+              0,
+              1.05
+            ]
+          },
+          "title": "Probabilidad de Colapso",
+          "type": "quantitative"
+        }
+      }
+    }
+  ],
+  "height": 350,
+  "title": "Sensibilidad a la Proporci\u00f3n de Refugio Contiguo",
+  "width": 650,
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "datasets": {
+    "data-28c52f368440b9dc94f1fddce9eb2553": [
+      {
+        "x1": 0,
+        "x2": 6,
+        "Zona": "1. Trampa Ecol\u00f3gica"
+      },
+      {
+        "x1": 6,
+        "x2": 20,
+        "Zona": "2. Umbral Cr\u00edtico (Transici\u00f3n)"
+      },
+      {
+        "x1": 20,
+        "x2": 30,
+        "Zona": "3. Sostenibilidad Emergente"
+      }
+    ],
+    "data-2996534461e42461f39e9c2bf368fefc": [
+      {
+        "Proporcion": 0.0,
+        "Probabilidad": 1.0
+      },
+      {
+        "Proporcion": 6.0,
+        "Probabilidad": 1.0
+      },
+      {
+        "Proporcion": 10.0,
+        "Probabilidad": 0.84
+      },
+      {
+        "Proporcion": 15.0,
+        "Probabilidad": 0.04
+      },
+      {
+        "Proporcion": 20.0,
+        "Probabilidad": 0.0
+      },
+      {
+        "Proporcion": 25.0,
+        "Probabilidad": 0.0
+      },
+      {
+        "Proporcion": 30.0,
+        "Probabilidad": 0.0
+      }
+    ]
+  }
+}
