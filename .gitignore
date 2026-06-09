@@ -29,7 +29,7 @@ tfg-env/
 *.swo
 
 # ─── Multimedia generada (pesada, se regenera con export_charts.py) ──
-# GIFs de simulación en predator_prey/ (se regeneran con el notebook)
+# GIFs de simulación regenerables desde el notebook
 /*.gif
 *.mp4
 /*.avi
