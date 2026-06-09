@@ -1,0 +1,41 @@
+# Bibliografía
+
+- **Allee, Warder C.** *Animal Aggregations: A Study in General Sociology*. University of Chicago Press, 1931.
+- **Brockmann, Dirk y Helbing, Dirk.** "The hidden geometry of complex, network-driven contagion phenomena". *Science*, 342(6164), 1337-1342, 2013.
+- **Brown, James H. y Kodric-Brown, Astrid.** "Turnover rates in insular biogeography: effect of immigration on extinction". *Ecology*, 58(2), 445-449, 1977.
+- **Courchamp, Franck, Berec, Luděk y Gascoigne, Joanna.** *Allee Effects in Ecology and Conservation*. Oxford University Press, 2008.
+- **DeAngelis, Donald L. y Mooij, Wolf M.** "Individual-based modeling of ecological and evolutionary processes". *Annual Review of Ecology, Evolution, and Systematics*, 36, 147-168, 2005.
+- **Durrett, Richard y Levin, Simon.** "The importance of being discrete (and spatial)". *Theoretical Population Biology*, 46(3), 363-394, 1994.
+- **Epstein, Joshua M. y Axtell, Robert.** *Growing Artificial Societies: Social Science from the Bottom Up*. MIT Press, 1996.
+- **Ferguson, Neil M., et al.** "Strategies for mitigating an influenza pandemic". *Nature*, 442(7101), 448-452, 2006.
+- **Gardner, Martin.** "The fantastic combinations of John Conway's new solitaire game 'life'". *Scientific American*, 223(4), 120-123, 1970.
+- **Gillespie, Daniel T.** "Exact stochastic simulation of coupled chemical reactions". *The Journal of Physical Chemistry*, 81(25), 2340-2361, 1977.
+- **Gilpin, Michael E. y Soulé, Michael E.** "Minimum Viable Populations: Processes of Species Extinction". En: Soulé, M. E. (ed.), *Conservation Biology: The Science of Scarcity and Diversity* (pp. 19-34). Sinauer Associates, 1986.
+- **Grimm, Volker, et al.** "The ODD protocol: A review and first update". *Ecological Modelling*, 221(23), 2760-2768, 2010.
+- **Grimm, Volker y Railsback, Steven F.** *Individual-based Modeling and Ecology*. Princeton University Press, 2005.
+- **Heino, Mikko, et al.** "Synchronous dynamics and rates of extinction in spatially structured populations". *Proceedings of the Royal Society of London. Series B: Biological Sciences*, 264(1381), 481-486, 1997.
+- **Heppenstall, Alison J., et al. (eds.).** *Agent-Based Models of Geographical Systems*. Springer, 2012.
+- **Hilty, Jodi A., Lidicker Jr, William Z. y Merenlender, Adina M.** *Corridor ecology: the science and practice of linking landscapes for biodiversity conservation*. Island Press, 2006.
+- **Holland, John H.** *Emergence: From chaos to order*. Oxford University Press, 1998.
+- **Holling, Crawford S.** "Some characteristics of simple types of predation and parasitism". *The Canadian Entomologist*, 91(7), 385-398, 1959.
+- **Huffaker, Carl B.** "Experimental studies on predation: Dispersion factors and predator-prey oscillations". *Hilgardia*, 27(14), 343-383, 1958.
+- **Levin, Simon A.** "The problem of pattern and scale in ecology". *Ecology*, 73(6), 1943-1967, 1992.
+- **Levins, Richard.** "Some demographic and genetic consequences of environmental heterogeneity for biological control". *Bulletin of the Entomological Society of America*, 15(3), 237-240, 1969.
+- **Lindeman, Raymond L.** "The trophic-dynamic aspect of ecology". *Ecology*, 23(4), 399-417, 1942.
+- **Lotka, Alfred J.** *Elements of Physical Biology*. Williams & Wilkins, 1925.
+- **MacArthur, Robert H. y Wilson, Edward O.** *The Theory of Island Biogeography*. Princeton University Press, 1967.
+- **Malthus, Thomas Robert.** *An Essay on the Principle of Population*. J. Johnson, 1798.
+- **Masad, David y Kazil, Jacqueline.** "Mesa: An Agent-Based Modeling Framework". En: *Proceedings of the 14th Python in Science Conference* (pp. 53-60), 2015.
+- **Mollison, Denis.** "Dependence of epidemic and population velocities on basic structures". *Mathematical Biosciences*, 107(2), 255-287, 1991.
+- **Moore, Edward F.** "Machine models of self-reproduction". En: *Proceedings of Symposia in Applied Mathematics* (vol. 14, pp. 17-33). American Mathematical Society, 1962.
+- **Nagel, Kai y Schreckenberg, Michael.** "A cellular automaton model for freeway traffic". *Journal de Physique I*, 2(12), 2221-2229, 1992.
+- **Noss, Reed F.** "The Wildlands Project: Land conservation strategy". *Wild Earth*, 1(1), 10-25, 1992.
+- **Okubo, Akira.** *Diffusion and Ecological Problems: Mathematical Models*. Springer-Verlag, 1980.
+- **Pulliam, H. Ronald.** "Sources, sinks, and population regulation". *The American Naturalist*, 132(5), 652-661, 1988.
+- **Rosenzweig, Michael L.** "Paradox of enrichment: destabilization of exploitation ecosystems in ecological time". *Science*, 171(3969), 385-387, 1971.
+- **Rosenzweig, Michael L. y MacArthur, Robert H.** "Graphical representation and stability conditions of predator-prey interactions". *The American Naturalist*, 97(895), 209-223, 1963.
+- **Schelling, Thomas C.** *Micromotives and Macrobehavior*. Norton, 1978.
+- **Schlaepfer, Martin A., Runge, Michael C. y Sherman, Paul W.** "Ecological and evolutionary traps". *Trends in Ecology & Evolution*, 17(10), 474-480, 2002.
+- **Skellam, John G.** "Random dispersal in theoretical populations". *Biometrika*, 38(1/2), 196-218, 1951.
+- **Soulé, Michael E.** "What is conservation biology?". *BioScience*, 35(11), 727-734, 1985.
+- **Volterra, Vito.** "Fluctuations in the abundance of a species considered mathematically". *Nature*, 118(2972), 558-560, 1926.
