@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Más allá de Lotka-Volterra · TFG · María Agostina Zavia</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦎</text></svg>">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦎</text></svg>">
   <meta name="description"
     content="Impacto de la estocasticidad y la estructura del paisaje en la extinción de especies mediante Modelos Basados en Individuos. TFG en Biología, Universidad de Málaga." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,15 +28,15 @@
 
     // 1. MODO NUBE (Hugging Face) - Por defecto para GitHub Pages
     const SIM_ENV_URL = "https://manteca24-beyond-lotka-volterra.hf.space";
-    
+
     // 2. MODO LOCAL (Comenta la línea anterior y descomenta esta para probar local)
     // const SIM_ENV_URL = "http://localhost:8765";
-    
+
     document.addEventListener("DOMContentLoaded", () => {
       document.querySelectorAll("iframe").forEach(iframe => {
         if (iframe.src.includes("hf.space") || iframe.src.includes("localhost")) {
-            const url = new URL(iframe.src);
-            iframe.src = SIM_ENV_URL + url.pathname + url.search;
+          const url = new URL(iframe.src);
+          iframe.src = SIM_ENV_URL + url.pathname + url.search;
         }
       });
     });
@@ -244,7 +245,7 @@
   <!-- ════════════════════════════════════════════ §3 FASE II -->
   <section id="refugio" style="max-width: 100%; padding: 5rem 2rem; margin: 0 auto; box-sizing: border-box;">
     <div style="max-width: 1250px; margin: 0 auto; width: 100%;">
-      <p class="section-label">Sección 3 · Entornos Heterogéneos· Fase II</p>
+      <p class="section-label">Sección 3 · Ecología del paisaje · Fase II</p>
       <h2 class="section-title">Refugios y trampas ecológicas · <span class="hl-green">Fase IIA</span></h2>
 
       <p class="lead">El espacio no es un contenedor pasivo. Es una variable activa que determina quién sobrevive. La
