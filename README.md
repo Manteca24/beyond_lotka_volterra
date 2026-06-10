@@ -76,6 +76,14 @@ solara run visualize.py
 ```
 > **Nota de desarrollo web:** Si quieres probar la web localmente abriendo `docs/index.html` y que además se comunique con tu servidor local en vez del de Hugging Face, abre `docs/index.html`, busca el script en la etiqueta `<head>`, comenta la constante `SIM_ENV_URL` apuntada a la nube y descomenta la que apunta a `http://localhost:8765`.
 
+#### Desplegar en Hugging Face
+Para sincronizar automáticamente tus cambios locales con el contenedor de Hugging Face Spaces (sin tener que usar la web de forma manual ni duplicar archivos), simplemente asegúrate de tener tu token configurado en el archivo `.env` (`HF_TOKEN=...`) y ejecuta el script de despliegue automático:
+```bash
+pip install huggingface_hub python-dotenv
+python deploy_to_hf.py
+```
+> **Nota de despliegue:** Este script extraerá la versión más actualizada de los archivos centrales (`visualize.py`, `model.py`, `agent.py`) junto a los archivos de configuración del contenedor que viven dentro de `hf_space/` (`Dockerfile`, `requirements.txt`) y los subirá directamente a la raíz de tu Hugging Face Space.
+
 ---
 
 ## Fases de Simulación
