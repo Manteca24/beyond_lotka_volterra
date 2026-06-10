@@ -2,6 +2,9 @@ import solara
 import pandas as pd
 import altair as alt
 alt.data_transformers.disable_max_rows()
+
+# Dark theme removed
+
 import numpy as np
 import time
 import threading
@@ -145,46 +148,46 @@ def Page():
     # Ensamblaje modular del marco reactivo
     solara.Title("Simulación: Lotka-Volterra vs Realidad Estocástica")
     
-    with solara.Sidebar():
-        solara.Markdown("### Control de Variables de Lotka-Volterra")
-        solara.Markdown("___Parámetros Demográficos___")
-        solara.SliderInt(label="Nº Presas Inicial", value=init_prey, min=10, max=200)
-        solara.SliderInt(label="Nº Depredadores Inicial", value=init_predator, min=2, max=100)
-        
-        solara.Markdown("___Parámetros Ecológicos___")
-        solara.SliderFloat(label="Tasa Crecimiento Presa (α)", value=alpha_growth, min=0.01, max=1.0, step=0.05)
-        solara.SliderFloat(label="Ganancia Depredador (δ)", value=delta_gain, min=1.0, max=25.0, step=1.0)
-        
-        solara.Markdown("""
-        *(Nota: El cambio de parámetros requiere de un Reinicio Estocástico para hacer efecto).*
-        """)
+    with solara.Columns([4, 8]):
+        with solara.Card(title="Control de Variables de Lotka-Volterra", margin=10, elevation=2):
+            solara.Markdown("___Parámetros Demográficos___")
+            solara.SliderInt(label="Nº Presas Inicial", value=init_prey, min=10, max=200)
+            solara.SliderInt(label="Nº Depredadores Inicial", value=init_predator, min=2, max=100)
+            
+            solara.Markdown("___Parámetros Ecológicos___")
+            solara.SliderFloat(label="Tasa Crecimiento Presa (α)", value=alpha_growth, min=0.01, max=1.0, step=0.05)
+            solara.SliderFloat(label="Ganancia Depredador (δ)", value=delta_gain, min=1.0, max=25.0, step=1.0)
+            
+            solara.Markdown("""
+            *(Nota: El cambio de parámetros requiere de un Reinicio Estocástico para hacer efecto).*
+            """)
 
-    with solara.Column(style={"padding": "2em", "max-width": "1000px", "margin": "0 auto"}): 
-        solara.Markdown("### Componente Predictivo Ecuacional de la Interacción Individual")
-        
-        with solara.Row(justify="center", gap="1em", style={"margin-bottom": "2em"}):
-            def toggle_play():
-                is_running.value = not is_running.value
-                
-            solara.Button("▶ Iniciar" if not is_running.value else "⏸ Pausa", on_click=toggle_play, color="primary")
-            solara.Button("Tick ⏭", on_click=perform_step)
-            solara.Button("Reinicio Estocástico ↺", on_click=reset_model, color="grey")
+        with solara.Column(align="center"): 
+            solara.Markdown("### Componente Predictivo Ecuacional de la Interacción Individual")
+            
+            with solara.Row(justify="center", gap="1em", style={"margin-bottom": "2em"}):
+                def toggle_play():
+                    is_running.value = not is_running.value
+                    
+                solara.Button("▶ Iniciar" if not is_running.value else "⏸ Pausa", on_click=toggle_play, color="primary")
+                solara.Button("Tick ⏭", on_click=perform_step)
+                solara.Button("Reinicio Estocástico ↺", on_click=reset_model, color="grey")
 
-        with solara.Row(justify="space-between"):
-            with solara.Column():
-                GridView()
-            with solara.Column():
-                PopulationChart()
-                solara.Markdown("""
-                **Guía de Interpretación:**
-                1. Inicializar iteración estocástica.
-                2. Visualizar perturbaciones probabilísticas.
-                3. Identificar picos poblacionales liminales de $N_t = 0$. 
-                
-                A diferencia del determinismo analítico, que predice oscilaciones incesantes, 
-                la estocasticidad interaccional local empujará iterativamente el marco 
-                hacia extinciones inexorables por ruido demográfico.
-                """)
+            with solara.Row(justify="space-between", style={"flex-wrap": "wrap", "justify-content": "center", "gap": "20px"}):
+                with solara.Column(align="center"):
+                    GridView()
+                with solara.Column(align="center"):
+                    PopulationChart()
+                    solara.Markdown("""
+                    **Guía de Interpretación:**
+                    1. Inicializar iteración estocástica.
+                    2. Visualizar perturbaciones probabilísticas.
+                    3. Identificar picos poblacionales liminales de $N_t = 0$. 
+                    
+                    A diferencia del determinismo analítico, que predice oscilaciones incesantes, 
+                    la estocasticidad interaccional local empujará iterativamente el marco 
+                    hacia extinciones inexorables por ruido demográfico.
+                    """)
 
 
 # Variable de estado global
@@ -211,34 +214,52 @@ def EstocasticidadDemoFaseIA():
         df = modelo.datacollector.get_model_vars_dataframe().reset_index().rename(columns={"index": "Tiempo"})
         df_melt = df.melt(id_vars=["Tiempo"], value_vars=["Prey", "Predator"],
                           var_name="Especie", value_name="Población")
-        return df_melt
+        return df, df_melt
 
     # 2. SOLARA.USE_MEMO: Solo ejecuta 'correr_simulacion' cuando cambia 'semilla_actual'
-    df_melt = solara.use_memo(correr_simulacion, dependencies=[semilla_actual])
+    df, df_melt = solara.use_memo(correr_simulacion, dependencies=[semilla_actual])
     
     # Renderizado de la gráfica usando el DataFrame fresco
-    chart = alt.Chart(df_melt).mark_line(strokeWidth=2.5, point=True).encode(
+    chart_time = alt.Chart(df_melt).mark_line(strokeWidth=2.5, point=True).encode(
         x=alt.X("Tiempo:Q", title="Tiempo (Ciclos)"), 
         y=alt.Y("Población:Q", title="Número de Individuos"),
         color=alt.Color("Especie:N", scale=alt.Scale(domain=["Prey", "Predator"], range=["blue", "#d62728"]))
     ).properties(
-        width=450, 
+        width=380, 
         height=300, 
-        title=f"Lotka-Volterra estocástico: Ecosistema Alternativo #{semilla_actual}"
+        title=f"Evolución Temporal"
+    )
+
+    trayectoria_fases = alt.Chart(df).mark_line(strokeWidth=2, opacity=0.8, color="purple").encode(
+        x=alt.X("Prey:Q", title="Población de Presas"),
+        y=alt.Y("Predator:Q", title="Población de Depredadores"),
+        order=alt.Order("Tiempo:Q", sort="ascending")
+    )
+    
+    punto_final = alt.Chart(df.iloc[[-1]]).mark_circle(size=150, color="black").encode(
+        x="Prey:Q",
+        y="Predator:Q"
+    )
+
+    chart_phase = (trayectoria_fases + punto_final).properties(
+        width=380, 
+        height=300, 
+        title=f"Espacio de Fases (Semilla: #{semilla_actual})"
     )
     
     # Interfaz de Usuario
-    with solara.Column():
+    with solara.Column(align="center"):
         solara.Markdown("### Lotka-Volterra estocástico")
         
-        # El botón incrementa el valor de la semilla y dispara el redibujado
         solara.Button(
             "🎲 Generar Nuevo Universo (Estocástico)", 
             on_click=lambda: semilla_multiverso.set(semilla_multiverso.value + 1), 
-            color="primary"
+            color="success"
         )
         
-        solara.FigureAltair(chart)
+        with solara.Row(gap="20px", style={"flex-wrap": "wrap", "justify-content": "center"}):
+            solara.FigureAltair(chart_time)
+            solara.FigureAltair(chart_phase)
 
 
 
@@ -267,34 +288,52 @@ def EstocasticidadDemoFaseIB():
         df = modelo.datacollector.get_model_vars_dataframe().reset_index().rename(columns={"index": "Tiempo"})
         df_melt = df.melt(id_vars=["Tiempo"], value_vars=["Prey", "Predator"],
                           var_name="Especie", value_name="Población")
-        return df_melt
+        return df, df_melt
 
     # 2. SOLARA.USE_MEMO: Solo ejecuta 'correr_simulacion' cuando cambia 'semilla_actual'
-    df_melt = solara.use_memo(correr_simulacion, dependencies=[semilla_actual])
+    df, df_melt = solara.use_memo(correr_simulacion, dependencies=[semilla_actual])
     
     # Renderizado de la gráfica usando el DataFrame fresco
-    chart = alt.Chart(df_melt).mark_line(strokeWidth=2.5, point=True).encode(
+    chart_time = alt.Chart(df_melt).mark_line(strokeWidth=2.5, point=True).encode(
         x=alt.X("Tiempo:Q", title="Tiempo (Ciclos)"), 
         y=alt.Y("Población:Q", title="Número de Individuos"),
         color=alt.Color("Especie:N", scale=alt.Scale(domain=["Prey", "Predator"], range=["blue", "#d62728"]))
     ).properties(
-        width=450, 
+        width=380, 
         height=300, 
-        title=f"Lotka-Volterra con capacidad de carga y respuesta funcional tipo II (Holling): Ecosistema Alternativo #{semilla_actual}"
+        title=f"Evolución Temporal"
+    )
+
+    trayectoria_fases = alt.Chart(df).mark_line(strokeWidth=2, opacity=0.8, color="purple").encode(
+        x=alt.X("Prey:Q", title="Población de Presas"),
+        y=alt.Y("Predator:Q", title="Población de Depredadores"),
+        order=alt.Order("Tiempo:Q", sort="ascending")
+    )
+    
+    punto_final = alt.Chart(df.iloc[[-1]]).mark_circle(size=150, color="black").encode(
+        x="Prey:Q",
+        y="Predator:Q"
+    )
+
+    chart_phase = (trayectoria_fases + punto_final).properties(
+        width=380, 
+        height=300, 
+        title=f"Espacio de Fases (Semilla: #{semilla_actual})"
     )
     
     # Interfaz de Usuario
-    with solara.Column():
+    with solara.Column(align="center"):
         solara.Markdown("### Lotka-Volterra con capacidad de carga y respuesta funcional tipo II (Holling)")
         
-        # El botón incrementa el valor de la semilla y dispara el redibujado
         solara.Button(
             "🎲 Generar Nuevo Universo (Estocástico)", 
             on_click=lambda: semilla_multiverso.set(semilla_multiverso.value + 1), 
-            color="primary"
+            color="success"
         )
         
-        solara.FigureAltair(chart)
+        with solara.Row(gap="20px", style={"flex-wrap": "wrap", "justify-content": "center"}):
+            solara.FigureAltair(chart_time)
+            solara.FigureAltair(chart_phase)
 
 
 # Un panel de control reactivo que permite ajustar parámetros ecológicos,
@@ -420,12 +459,11 @@ def get_chart_lab():
     chart = dots.properties(
         width=400,
         height=400,
-        background="#fcfcfc",
+        background="white",
         title=alt.TitleParams(
             text=f"Paso: {step_count_lab.value} | Semilla: {current_seed_lab.value}",
             subtitle=[
                 f"Presas: {n_presas} | Depredadores: {n_depredadores} | Espacio Vacío: {empty_pct*100:.1f}%",
-                "Ecosistema espacial estocástico continuo"
             ],
             fontSize=14,
             subtitleFontSize=10,
@@ -440,12 +478,9 @@ def get_chart_lab():
 def Dashboard():
     # Animación gestionada externamente por toggle_play_lab() con hilo dedicado.
 
-    with solara.Card(
-        title="🔬 Laboratorio Espacial y Generador de Dinámica Trófica (Durrett-Levin)",
-        subtitle="Ajusta parámetros, visualiza en vivo y exporta tu GIF animado hasta la extinción.",
-        margin=10,
-        elevation=3
-    ):
+    with solara.Card(margin=10, elevation=3):
+        with solara.Column(align="center", style={"width": "100%"}):
+            solara.Markdown("### Laboratorio Espacial y Generador de Dinámica Trófica (Durrett-Levin)")
         # El uso de solara.Columns([4, 8]) asegura un layout de rejilla fijo al 33% / 66%
         # sin peligro de colapso o ensanchamientos repentinos al interactuar con deslizadores.
         with solara.Columns([4, 8]):
@@ -462,7 +497,7 @@ def Dashboard():
                 solara.Button(
                     "↺ Aplicar y Reiniciar", 
                     on_click=build_new_model_lab,
-                    color="grey",
+                    color="warning",
                     style="margin-top: 15px; width: 100%;"
                 )
                 
@@ -473,7 +508,7 @@ def Dashboard():
                     solara.Button(
                         "▶ Play / ⏸ Pausa", 
                         on_click=toggle_play_lab, 
-                        color="primary"
+                        color="success"
                     )
                     solara.Button(
                         "⏭ Paso Individual", 
@@ -582,16 +617,16 @@ def get_chart_f2():
 @solara.component
 def PageFase2():
     with solara.Column(align="center", gap="20px"):
-        solara.Markdown("# 🐇 Simulador de Corredor Ecológico 🐺")
+        solara.Markdown("# Simulador de corredor ecológico ")
 
         with solara.Row(gap="10px", style={"flex-wrap": "wrap", "justify-content": "center"}):
             solara.Switch(label="Activar Corredor", value=use_corridor, on_value=on_scenario_change)
             solara.Button(
                 "⏸ Pausa" if is_running_f2.value else "▶ Play",
-                on_click=toggle_play_f2, color="primary"
+                on_click=toggle_play_f2, color="success"
             )
             solara.Button("⏭ Paso", on_click=perform_step_f2)
-            solara.Button("↺ Reiniciar", on_click=reset_model_f2, color="grey")
+            solara.Button("↺ Reiniciar", on_click=reset_model_f2, color="warning")
 
         solara.FigureAltair(get_chart_f2())
 
@@ -730,16 +765,16 @@ def generar_universo():
         df = pd.DataFrame(datos)
         
         titulo_grafica = "Fase IA: Lotka-Volterra Teórico"
-        if chk_K_val.value and not chk_Resp_val.value: titulo_grafica = "Fase IB: Presas con Capacidad de Carga (K)"
-        if chk_K_val.value and chk_Resp_val.value: titulo_grafica = "Fase IB: Capacidad de Carga (K) y Respuesta Funcional Tipo II de Holling (h)"
+        if chk_K_val.value and not chk_Resp_val.value: titulo_grafica = "Fase IB: Presas con capacidad de carga (K)"
+        if chk_K_val.value and chk_Resp_val.value: titulo_grafica = "Fase IB: capacidad de carga (K) y respuesta funcional tipo II"
         
         chart = alt.Chart(df).mark_line(strokeWidth=2.5).encode(
             x=alt.X('Tiempo:Q', title='Tiempo (Ticks)'),
             y=alt.Y('Poblacion:Q', title='Individuos'),
             color=alt.Color('Especie:N', scale=alt.Scale(domain=['Presas', 'Depredadores'], range=['blue', '#d62728']))
         ).properties(
-            width=480, 
-            height=350, 
+            width=380, 
+            height=280, 
             title=titulo_grafica
         ).configure_title(
             fontSize=16, anchor='start', color='gray'
@@ -756,24 +791,29 @@ def generar_universo():
 @solara.component
 def PanelFase1():
     with solara.Card(title="Panel Interactivo Fase I", elevation=3, margin=10):
-        with solara.Columns([4, 8]):
+        with solara.Columns([5, 7]):
             with solara.Column():
                 solara.Checkbox(label="Activar Límite Logístico (K)", value=chk_K_val)
                 solara.SliderInt("Valor K:", value=slide_K_val, min=100, max=2000, step=100)
                 solara.Checkbox(label="Activar Respuesta Funcional tipo II", value=chk_Resp_val)
-                solara.SliderInt("Tiempo de manipulación:", value=slide_T_val, min=1, max=10, step=1)
+                solara.SliderInt("Tiempo manipulación:", value=slide_T_val, min=1, max=10, step=1)
                 solara.SliderInt("Pasos:", value=slide_Pasos_val, min=50, max=1500, step=50)
                 
-                solara.Button("▶️ Generar universo estocástico", on_click=generar_universo, color="success")
+                solara.Button(
+                    "🎲 Generar Universo Estocástico", 
+                    on_click=generar_universo, 
+                    color="success",
+                    style={"margin-top": "15px", "width": "100%"}
+                )
                 
                 if fase1_status.value:
                     solara.Markdown(f"**Estado:** {fase1_status.value}")
                     
-            with solara.Column():
+            with solara.Column(align="center", style={"justify-content": "center", "min-height": "380px"}):
                 if fase1_chart.value is not None:
                     solara.FigureAltair(fase1_chart.value)
                 else:
-                    solara.Markdown("*Haz clic en 'Generar universo estocástico' para ejecutar la simulación.*")
+                    solara.Markdown("*Haz clic en '🎲 Generar Universo Estocástico' para ejecutar la simulación.*")
 
 
 
