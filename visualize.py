@@ -384,30 +384,7 @@ def perform_step_lab():
     else:
         is_running_lab.value = False
 
-_anim_thread_lab = None  # Referencia global al hilo del Laboratorio
 
-def toggle_play_lab():
-    """Activa o desactiva la animación usando un hilo dedicado (sin bucle de renders)."""
-    global _anim_thread_lab
-    if is_running_lab.value:
-        is_running_lab.value = False          # El hilo termina en su próxima iteración
-    else:
-        if _anim_thread_lab is None or not _anim_thread_lab.is_alive():
-            is_running_lab.value = True
-            def _loop():
-                while is_running_lab.value:
-                    time.sleep(0.12)
-                    if not is_running_lab.value:
-                        break
-                    mod = model_state_lab.value
-                    if mod.running:
-                        mod.step()
-                        step_count_lab.value += 1
-                    else:
-                        is_running_lab.value = False
-                        break
-            _anim_thread_lab = threading.Thread(target=_loop, daemon=True)
-            _anim_thread_lab.start()
 
 # --- Gráfico Altair para el visualizador ---
 def get_chart_lab():
@@ -476,7 +453,16 @@ def get_chart_lab():
 # --- Layout y Renderizado del Dashboard ---
 @solara.component
 def Dashboard():
-    # Animación gestionada externamente por toggle_play_lab() con hilo dedicado.
+    def runner():
+        while is_running_lab.value:
+            perform_step_lab()
+            time.sleep(0.12)
+            
+    solara.use_thread(runner, dependencies=[is_running_lab.value])
+    
+    def toggle_play():
+        is_running_lab.value = not is_running_lab.value
+
 
     with solara.Card(margin=10, elevation=3):
         with solara.Column(align="center", style={"width": "100%"}):
@@ -506,9 +492,9 @@ def Dashboard():
             with solara.Column(align="center"):
                 with solara.Row(gap="15px", justify="center", style={"margin-bottom": "12px", "flex-wrap": "wrap"}):
                     solara.Button(
-                        "▶ Play / ⏸ Pausa", 
-                        on_click=toggle_play_lab, 
-                        color="success"
+                        "▶ Play" if not is_running_lab.value else "⏸ Pausa", 
+                        on_click=toggle_play, 
+                        color="success" if not is_running_lab.value else "warning"
                     )
                     solara.Button(
                         "⏭ Paso Individual", 
@@ -529,35 +515,7 @@ step_count_f2 = solara.reactive(0)
 is_running_f2 = solara.reactive(False)
 use_corridor = solara.reactive(False)
 
-_anim_thread = None  # Referencia al hilo de animación
 
-# --- Funciones de Control ---
-
-def perform_step_f2():
-    if model_f2.value.running:
-        model_f2.value.step()
-        step_count_f2.value += 1
-    else:
-        is_running_f2.value = False
-
-def _animation_loop():
-    """Corre en hilo separado. Para cuando is_running_f2=False o el modelo termina."""
-    while is_running_f2.value and model_f2.value.running:
-        model_f2.value.step()
-        step_count_f2.value += 1
-        time.sleep(0.2)
-    if is_running_f2.value:
-        is_running_f2.value = False
-
-def toggle_play_f2():
-    global _anim_thread
-    if is_running_f2.value:
-        is_running_f2.value = False
-    else:
-        if _anim_thread is None or not _anim_thread.is_alive():
-            is_running_f2.value = True
-            _anim_thread = threading.Thread(target=_animation_loop, daemon=True)
-            _anim_thread.start()
 
 def reset_model_f2():
     is_running_f2.value = False
@@ -609,13 +567,26 @@ def get_chart_f2():
         title=f"Paso: {s} | Presas: {n_presas} | Depredadores: {n_depredadores}"
     )
 
+def perform_step_f2():
+    if model_f2.value.running:
+        model_f2.value.step()
+        step_count_f2.value += 1
+    else:
+        is_running_f2.value = False
+
 # --- Componente Principal ---
-# IMPORTANTE: NO usar use_effect con step_count_f2 como dependencia.
-# Solara auto-suscribe el componente a cualquier .value que se lea
-# durante el render. El hilo actualiza step_count_f2 cada 200ms y Solara
-# re-renderiza automáticamente SIN crear un bucle infinito.
 @solara.component
 def PageFase2():
+    def runner():
+        while is_running_f2.value:
+            perform_step_f2()
+            time.sleep(0.2)
+            
+    solara.use_thread(runner, dependencies=[is_running_f2.value])
+    
+    def toggle_play():
+        is_running_f2.value = not is_running_f2.value
+
     with solara.Column(align="center", gap="20px"):
         solara.Markdown("# Simulador de corredor ecológico ")
 
@@ -623,7 +594,7 @@ def PageFase2():
             solara.Switch(label="Activar Corredor", value=use_corridor, on_value=on_scenario_change)
             solara.Button(
                 "⏸ Pausa" if is_running_f2.value else "▶ Play",
-                on_click=toggle_play_f2, color="success"
+                on_click=toggle_play, color="warning" if is_running_f2.value else "success"
             )
             solara.Button("⏭ Paso", on_click=perform_step_f2)
             solara.Button("↺ Reiniciar", on_click=reset_model_f2, color="warning")
